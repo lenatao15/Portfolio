@@ -1,0 +1,51 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+<header class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-3 fw-bold mb-3">Olena Makarova</h1>
+        <p class="lead mb-4">MSIS Student | Business Analyst | Data Storyteller</p>
+        <a href="{% url 'projects' %}" class="btn btn-light btn-lg px-4">View My Work</a>
+    </div>
+</header>
+
+<section class="section-padding">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-4">Bridging the Gap Between Data and Human Stories</h2>
+                <p class="text-muted">{{ profile.about_me|truncatewords:50 }}</p>
+                <a href="{% url 'about' %}" class="btn btn-outline-primary mt-3">Read More About Me</a>
+            </div>
+            <div class="col-md-6 text-center">
+                <!-- Placeholder for a professional photo if available -->
+                <div class="bg-secondary text-white rounded p-5" style="height: 300px; display: flex; align-items: center; justify-content: center;">
+                    <h3>[ Professional Photo ]</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light section-padding">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Featured Projects</h2>
+        <div class="row g-4">
+            {% for project in featured_projects %}
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">{{ project.title }}</h5>
+                        <p class="card-text text-muted small">{{ project.summary }}</p>
+                        <a href="{% url 'project_detail' project.slug %}" class="btn btn-primary btn-sm mt-3">View Details</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="text-center mt-5">
+            <a href="{% url 'projects' %}" class="btn btn-secondary">View All Projects</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

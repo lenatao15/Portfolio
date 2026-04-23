@@ -1,0 +1,97 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}{{ project.title }} | Olena Makarova{% endblock %}
+
+{% block content %}
+<article class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item"><a href="{% url 'projects' %}">Projects</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ project.title }}</li>
+                  </ol>
+                </nav>
+
+                <h1 class="display-4 fw-bold mb-3">{{ project.title }}</h1>
+                <p class="lead text-primary mb-5 fw-semibold">{{ project.summary }}</p>
+
+                <!-- Visual Placeholder -->
+                <div class="bg-light border rounded mb-5 p-5 text-center shadow-sm" style="min-height: 400px; display: flex; align-items: center; justify-content: center;">
+                    {% if project.image %}
+                        <img src="{{ project.image.url }}" alt="{{ project.title }}" class="img-fluid rounded shadow">
+                    {% else %}
+                        <div class="text-center">
+                            <h3 class="text-muted">Visual Representation</h3>
+                            <p class="text-muted small">Charts, Screenshots, or Diagrams</p>
+                        </div>
+                    {% endif %}
+                </div>
+
+                <div class="row g-5">
+                    <div class="col-md-8">
+                        <section class="mb-5">
+                            <h3 class="fw-bold mb-3">Business Problem</h3>
+                            <div class="p-3 bg-white border-start border-primary border-4 shadow-sm">
+                                {{ project.business_problem|linebreaks }}
+                            </div>
+                        </section>
+
+                        <section class="mb-5">
+                            <h3 class="fw-bold mb-3">Key Features</h3>
+                            {{ project.key_features|linebreaks }}
+                        </section>
+
+                        <section class="mb-5">
+                            <h3 class="fw-bold mb-3">My Role & Contribution</h3>
+                            {{ project.role|linebreaks }}
+                        </section>
+
+                        <section class="mb-5">
+                            <h3 class="fw-bold mb-3">Biggest Challenge</h3>
+                            <div class="p-3 bg-light rounded">
+                                {{ project.biggest_challenge|linebreaks }}
+                            </div>
+                        </section>
+
+                        <section class="mb-5">
+                            <h3 class="fw-bold mb-3">What I Learned</h3>
+                            {{ project.what_you_learned|linebreaks }}
+                        </section>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="sticky-top" style="top: 100px;">
+                            <div class="card mb-4 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="fw-bold mb-3 text-primary">Tools Used</h5>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        {% for tool in project.tools_used.split %}
+                                            <span class="badge bg-primary-subtle text-primary border border-primary-subtle">{{ tool|cut:"," }}</span>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {% if project.github_link or project.demo_link %}
+                            <div class="card border-0 shadow-sm bg-primary text-white">
+                                <div class="card-body text-center py-4">
+                                    <h5 class="fw-bold mb-3">Explore Further</h5>
+                                    {% if project.github_link %}
+                                        <a href="{{ project.github_link }}" target="_blank" class="btn btn-light w-100 mb-2">View Code on GitHub</a>
+                                    {% endif %}
+                                    {% if project.demo_link %}
+                                        <a href="{{ project.demo_link }}" target="_blank" class="btn btn-outline-light w-100">Live Demo</a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+{% endblock %}

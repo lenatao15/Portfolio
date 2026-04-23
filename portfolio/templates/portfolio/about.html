@@ -1,0 +1,21 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}About Me | Olena Makarova{% endblock %}
+
+{% block content %}
+<section class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="fw-bold mb-4">About Me</h2>
+                <div class="lead mb-4">
+                    {{ profile.about_me|linebreaks }}
+                </div>
+                <hr class="my-5">
+                <h3 class="fw-bold mb-3">Personal Philosophy</h3>
+                <p>I enjoy working independently and value deep focus. I’m naturally detail-oriented and tend to notice things others might overlook — especially in data. I’m currently exploring career paths in business analysis and systems analysis, where I can combine structured thinking with meaningful problem-solving.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

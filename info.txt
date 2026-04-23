@@ -1,0 +1,114 @@
+# Olena Makarova
+
+## About Me
+I’m a Master of Science in Information Systems student at Baylor University with a concentration in Business Analysis (GPA: 4.0). 
+
+My background is a mix of sociology and technology, which means I don’t just look at data — I try to understand the human story behind it. I enjoy organizing messy information, finding patterns, and turning chaos into something structured and useful.
+
+I’ve worked in both administrative and data-focused roles, where I developed strong attention to detail, problem-solving skills, and the ability to work across teams. I’m especially interested in roles where I can combine analytical thinking with real-world impact.
+
+---
+
+## Skills
+
+### Technical Skills
+- Data Analysis & Data Cleaning  
+- SQL  
+- Python  
+- Tableau  
+- Microsoft Excel  
+- Lucidchart  
+- Visio  
+- Data Modeling  
+- Basic Video Editing  
+
+### Analytical Skills
+- Trend Analysis  
+- Data Interpretation  
+- Problem Solving  
+- Workflow Optimization  
+
+### Soft Skills
+- Communication  
+- Cross-functional Collaboration  
+- Attention to Detail  
+- Organization  
+- Adaptability  
+
+---
+
+## Experience
+
+### Property Records Analyst  
+**Total Tax Certificate — Waco, TX**  
+April 2025 – Present  
+
+- Analyzed and organized large volumes of property and tax records  
+- Transformed raw public data into structured, client-ready datasets  
+- Identified discrepancies and resolved data issues  
+- Compiled information from multiple sources into clean Excel reports  
+- Supported accurate and timely property tax reporting  
+
+---
+
+### Project Administrator  
+**Stantec — Petaluma, CA**  
+April 2023 – December 2024  
+
+- Processed expense reports, invoices, and purchase orders with high accuracy  
+- Improved financial tracking through systematic review processes  
+- Maintained and audited company databases to ensure data integrity  
+- Acted as a liaison between HR, finance, and project teams  
+- Helped streamline workflows and reduce delays in project operations  
+- Implemented digital document organization systems  
+
+---
+
+## Education
+
+### Baylor University — Waco, TX  
+Master of Science in Information Systems  
+Expected Graduation: June 2026  
+- Concentration: Business Analysis  
+- GPA: 4.0  
+
+### Kyiv National University of Culture and Arts — Kyiv, Ukraine  
+Bachelor of Sociology  
+Graduated: July 2018  
+- Focus: Sociology and Data Analysis  
+
+---
+
+## Certifications
+- HRCI Human Resource Associate Specialization Certificate  
+
+---
+
+## Languages
+- Ukrainian — Native  
+- Russian — Native  
+- English — Fluent  
+- Chinese — Pre-intermediate  
+- Japanese — Beginner  
+
+---
+
+## Projects (Optional Section — you can expand later)
+- Tableau dashboards (data visualization and storytelling)
+- SQL-based data analysis projects
+- Academic analytics projects
+
+---
+
+## Contact
+
+Email: Olena_makarova1@baylor.edu  
+Phone: (707) 413-5847  
+LinkedIn: www.linkedin.com/in/olena-makarova-a10687198
+
+---
+
+## Personal Note (Optional but powerful)
+I enjoy working independently and value deep focus. I’m naturally detail-oriented and tend to notice things others might overlook — especially in data.
+
+I’m currently exploring career paths in business analysis and systems analysis, where I can combine structured thinking with meaningful problem-solving.

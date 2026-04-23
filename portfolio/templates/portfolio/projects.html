@@ -1,0 +1,30 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}Projects | Olena Makarova{% endblock %}
+
+{% block content %}
+<section class="section-padding bg-light">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Portfolio Projects</h2>
+        <div class="row g-4">
+            {% for project in projects_list %}
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <!-- Placeholder for image -->
+                    <div class="bg-secondary-subtle rounded-top text-center p-5" style="height: 180px; display: flex; align-items: center; justify-content: center;">
+                        <span class="text-muted">Project Visual</span>
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="card-title fw-bold mb-3">{{ project.title }}</h5>
+                        <p class="card-text text-muted mb-4">{{ project.summary }}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="{% url 'project_detail' project.slug %}" class="btn btn-primary">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
