@@ -7,8 +7,10 @@ pip install -r requirements.txt
 python manage.py collectstatic --no-input
 python manage.py migrate
 
-# Populate the database with your info and projects
-python populate_db.py
+# Load data from the exported JSON file
+if [ -f data.json ]; then
+    python manage.py loaddata data.json
+fi
 
 # Create superuser if environment variables are set
 if [ "$DJANGO_SUPERUSER_USERNAME" ]; then

@@ -1,0 +1,951 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-04-23T21:27:48.891Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Olena Makarova",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"About me\", \"Linkedin\", \"Github\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 3,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 3,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 3,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 3,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 2,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 2,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 2,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 2,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add certification",
+    "content_type": 7,
+    "codename": "add_certification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change certification",
+    "content_type": 7,
+    "codename": "change_certification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete certification",
+    "content_type": 7,
+    "codename": "delete_certification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view certification",
+    "content_type": 7,
+    "codename": "view_certification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add education",
+    "content_type": 8,
+    "codename": "add_education"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change education",
+    "content_type": 8,
+    "codename": "change_education"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete education",
+    "content_type": 8,
+    "codename": "delete_education"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view education",
+    "content_type": 8,
+    "codename": "view_education"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add experience",
+    "content_type": 9,
+    "codename": "add_experience"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change experience",
+    "content_type": 9,
+    "codename": "change_experience"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete experience",
+    "content_type": 9,
+    "codename": "delete_experience"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view experience",
+    "content_type": 9,
+    "codename": "view_experience"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add profile",
+    "content_type": 10,
+    "codename": "add_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change profile",
+    "content_type": 10,
+    "codename": "change_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete profile",
+    "content_type": 10,
+    "codename": "delete_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view profile",
+    "content_type": 10,
+    "codename": "view_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add project",
+    "content_type": 11,
+    "codename": "add_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change project",
+    "content_type": 11,
+    "codename": "change_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete project",
+    "content_type": 11,
+    "codename": "delete_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view project",
+    "content_type": 11,
+    "codename": "view_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add skill",
+    "content_type": 12,
+    "codename": "add_skill"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change skill",
+    "content_type": 12,
+    "codename": "change_skill"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete skill",
+    "content_type": 12,
+    "codename": "delete_skill"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view skill",
+    "content_type": 12,
+    "codename": "view_skill"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$gmfXysiYBwZpQn5ZsZUwQi$p8P3ghBQEab16S1k3APe48EE/XLF1p0frCAW+cWjNjA=",
+    "last_login": "2026-04-23T21:24:44.864Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@example.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-04-23T21:23:56.873Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "portfolio",
+    "model": "certification"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "portfolio",
+    "model": "education"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "portfolio",
+    "model": "experience"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "portfolio",
+    "model": "profile"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "portfolio",
+    "model": "project"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "portfolio",
+    "model": "skill"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "twzpo1rx44gfnfyq0r5phs8k4q2k5syn",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQAP_C2RBgQahH776BwO4iVVOS0p6MfzckPeh1ZjJvEdO-1bh3XuNM4iK0OP2ynPDJyxD0SMu9SWzLts5ZjkQetstbI35dj_ZvUFOvY3v2gFAwExoCS1NxZILznkFhgGAVQ7aqKApOTQXBaIcqTaEwa7BJfL7jcTfO:1wG1Y2:UT8gTo32C2lkOmm8W2Rvl-_oaAGtXQvHCJioTxaRx8k",
+    "expire_date": "2026-05-07T21:25:22.493Z"
+  }
+},
+{
+  "model": "portfolio.profile",
+  "pk": 1,
+  "fields": {
+    "name": "Olena Makarova",
+    "about_me": "I’m a Master of Science in Information Systems student at Baylor University with a concentration in Business Analysis (GPA: 4.0). \r\n\r\nMy background is a mix of sociology and technology, which means I don’t just look at data — I try to understand the human story behind it. I enjoy organizing messy information, finding patterns, and turning chaos into something structured and useful.\r\n\r\nI’ve worked in both administrative and data-focused roles, where I developed strong attention to detail, problem-solving skills, and the ability to work across teams. I’m especially interested in roles where I can combine analytical thinking with real-world impact.",
+    "email": "Olena_makarova1@baylor.edu",
+    "phone": "(707) 413-5847",
+    "linkedin": "https://www.linkedin.com/in/olena-makarova-a10687198",
+    "github": "https://github.com/lenatao15"
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 1,
+  "fields": {
+    "name": "Data Analysis & Data Cleaning",
+    "category": "technical",
+    "proficiency": ""
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 2,
+  "fields": {
+    "name": "SQL",
+    "category": "technical",
+    "proficiency": ""
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 3,
+  "fields": {
+    "name": "Python",
+    "category": "technical",
+    "proficiency": ""
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 4,
+  "fields": {
+    "name": "Tableau",
+    "category": "technical",
+    "proficiency": ""
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 5,
+  "fields": {
+    "name": "Microsoft Excel",
+    "category": "technical",
+    "proficiency": ""
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 6,
+  "fields": {
+    "name": "Lucidchart",
+    "category": "technical",
+    "proficiency": ""
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 7,
+  "fields": {
+    "name": "Visio",
+    "category": "technical",
+    "proficiency": ""
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 8,
+  "fields": {
+    "name": "Data Modeling",
+    "category": "technical",
+    "proficiency": ""
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 9,
+  "fields": {
+    "name": "Basic Video Editing",
+    "category": "technical",
+    "proficiency": ""
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 10,
+  "fields": {
+    "name": "Trend Analysis",
+    "category": "analytical",
+    "proficiency": ""
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 11,
+  "fields": {
+    "name": "Data Interpretation",
+    "category": "analytical",
+    "proficiency": ""
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 12,
+  "fields": {
+    "name": "Problem Solving",
+    "category": "analytical",
+    "proficiency": ""
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 13,
+  "fields": {
+    "name": "Workflow Optimization",
+    "category": "analytical",
+    "proficiency": ""
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 14,
+  "fields": {
+    "name": "Communication",
+    "category": "soft",
+    "proficiency": ""
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 15,
+  "fields": {
+    "name": "Cross-functional Collaboration",
+    "category": "soft",
+    "proficiency": ""
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 16,
+  "fields": {
+    "name": "Attention to Detail",
+    "category": "soft",
+    "proficiency": ""
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 17,
+  "fields": {
+    "name": "Organization",
+    "category": "soft",
+    "proficiency": ""
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 18,
+  "fields": {
+    "name": "Adaptability",
+    "category": "soft",
+    "proficiency": ""
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 19,
+  "fields": {
+    "name": "Ukrainian",
+    "category": "language",
+    "proficiency": "Native"
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 20,
+  "fields": {
+    "name": "Russian",
+    "category": "language",
+    "proficiency": "Native"
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 21,
+  "fields": {
+    "name": "English",
+    "category": "language",
+    "proficiency": "Fluent"
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 22,
+  "fields": {
+    "name": "Chinese",
+    "category": "language",
+    "proficiency": "Pre-intermediate"
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 23,
+  "fields": {
+    "name": "Japanese",
+    "category": "language",
+    "proficiency": "Beginner"
+  }
+},
+{
+  "model": "portfolio.experience",
+  "pk": 1,
+  "fields": {
+    "job_title": "Property Records Analyst",
+    "company": "Total Tax Certificate",
+    "location": "Waco, TX",
+    "start_date": "April 2025",
+    "end_date": "Present",
+    "description": "- Analyzed and organized large volumes of property and tax records\n- Transformed raw public data into structured, client-ready datasets\n- Identified discrepancies and resolved data issues\n- Compiled information from multiple sources into clean Excel reports\n- Supported accurate and timely property tax reporting"
+  }
+},
+{
+  "model": "portfolio.experience",
+  "pk": 2,
+  "fields": {
+    "job_title": "Project Administrator",
+    "company": "Stantec",
+    "location": "Petaluma, CA",
+    "start_date": "April 2023",
+    "end_date": "December 2024",
+    "description": "- Processed expense reports, invoices, and purchase orders with high accuracy\n- Improved financial tracking through systematic review processes\n- Maintained and audited company databases to ensure data integrity\n- Acted as a liaison between HR, finance, and project teams\n- Helped streamline workflows and reduce delays in project operations\n- Implemented digital document organization systems"
+  }
+},
+{
+  "model": "portfolio.education",
+  "pk": 1,
+  "fields": {
+    "institution": "Baylor University",
+    "location": "Waco, TX",
+    "degree": "Master of Science in Information Systems",
+    "graduation_date": "Expected June 2026",
+    "gpa": "4.0",
+    "details": "Concentration: Business Analysis"
+  }
+},
+{
+  "model": "portfolio.education",
+  "pk": 2,
+  "fields": {
+    "institution": "Kyiv National University of Culture and Arts",
+    "location": "Kyiv, Ukraine",
+    "degree": "Bachelor of Sociology",
+    "graduation_date": "July 2018",
+    "gpa": "",
+    "details": "Focus: Sociology and Data Analysis"
+  }
+},
+{
+  "model": "portfolio.certification",
+  "pk": 1,
+  "fields": {
+    "name": "HRCI Human Resource Associate Specialization Certificate"
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 1,
+  "fields": {
+    "title": "Chatbot Project",
+    "summary": "An intelligent conversational agent designed to improve customer support responsiveness.",
+    "business_problem": "Customer support teams were overwhelmed with repetitive queries, leading to long wait times.",
+    "tools_used": "Python, OpenAI API, Flask",
+    "key_features": "Natural language understanding, automated FAQ resolution, seamless human handoff.",
+    "role": "Lead Developer - responsible for backend logic and API integration.",
+    "biggest_challenge": "Handling ambiguous user intent without losing conversation context.",
+    "what_you_learned": "Learned the importance of prompt engineering and structured conversation flows.",
+    "image": "",
+    "github_link": "https://github.com/olenamakarova96/chatbot-project",
+    "demo_link": "",
+    "slug": "chatbot-project"
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 2,
+  "fields": {
+    "title": "n8n Agent Workflow Project",
+    "summary": "Automated business processes using low-code workflow automation.",
+    "business_problem": "Manual data entry between CRM and project management tools was causing errors and delays.",
+    "tools_used": "n8n, PostgreSQL, Google Sheets API",
+    "key_features": "Real-time data synchronization, automated email notifications, error logging.",
+    "role": "Workflow Architect - designed the end-to-end automation logic.",
+    "biggest_challenge": "Managing complex branching logic for different lead categories.",
+    "what_you_learned": "Gained deep understanding of webhooks and API authentication methods.",
+    "image": "",
+    "github_link": "https://github.com/olenamakarova96/n8n-workflow",
+    "demo_link": "",
+    "slug": "n8n-agent-workflow-project"
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 3,
+  "fields": {
+    "title": "LangChain Agent Project",
+    "summary": "A sophisticated AI agent capable of multi-step reasoning and tool usage.",
+    "business_problem": "Users needed a way to query structured databases using natural language.",
+    "tools_used": "Python, LangChain, SQLite, Streamlit",
+    "key_features": "SQL agent for database queries, memory retention, document retrieval.",
+    "role": "AI Engineer - implemented the LangChain reasoning engine.",
+    "biggest_challenge": "Ensuring the agent didn't hallucinate SQL queries for complex joins.",
+    "what_you_learned": "Mastered chain-of-thought prompting and vector store integration.",
+    "image": "",
+    "github_link": "https://github.com/olenamakarova96/langchain-agent",
+    "demo_link": "",
+    "slug": "langchain-agent-project"
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 4,
+  "fields": {
+    "title": "Google AI Studio Media Project",
+    "summary": "Leveraging Gemini models for automated media analysis and content generation.",
+    "business_problem": "Content creators lacked tools to quickly summarize and categorize large video libraries.",
+    "tools_used": "Google AI Studio, Gemini API, Node.js",
+    "key_features": "Video summarization, sentiment analysis, automated thumbnail captioning.",
+    "role": "Integration Specialist - connected Gemini API to the media processing pipeline.",
+    "biggest_challenge": "Optimizing token usage for long-form video content processing.",
+    "what_you_learned": "Explored the capabilities of multimodal models in media contexts.",
+    "image": "",
+    "github_link": "https://github.com/olenamakarova96/google-ai-media",
+    "demo_link": "",
+    "slug": "google-ai-studio-media-project"
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 5,
+  "fields": {
+    "title": "Machine Learning Project (scikit-learn)",
+    "summary": "Predictive model for identifying patterns in sociology-tech data.",
+    "business_problem": "Identifying key factors that influence technology adoption in diverse social groups.",
+    "tools_used": "Python, Scikit-learn, Pandas, Matplotlib",
+    "key_features": "Data preprocessing, feature engineering, Random Forest classification.",
+    "role": "Data Scientist - performed data cleaning and model training.",
+    "biggest_challenge": "Dealing with highly imbalanced classes in the social dataset.",
+    "what_you_learned": "Learned advanced data imputation and cross-validation techniques.",
+    "image": "",
+    "github_link": "https://github.com/olenamakarova96/ml-sociology",
+    "demo_link": "",
+    "slug": "machine-learning-project-scikit-learn"
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 6,
+  "fields": {
+    "title": "Campus SkillSwap Django Project",
+    "summary": "A community-driven platform for students to exchange skills and knowledge.",
+    "business_problem": "Students lacked a central hub to find peers for collaborative learning.",
+    "tools_used": "Django, Bootstrap, SQLite",
+    "key_features": "User profiles, skill matching algorithm, messaging system.",
+    "role": "Full Stack Developer - built both the database schema and the frontend.",
+    "biggest_challenge": "Implementing an efficient search and filtering system for skills.",
+    "what_you_learned": "Deepened knowledge of Django's ORM and template inheritance.",
+    "image": "",
+    "github_link": "https://github.com/olenamakarova96/campus-skillswap",
+    "demo_link": "",
+    "slug": "campus-skillswap-django-project"
+  }
+}
+]
