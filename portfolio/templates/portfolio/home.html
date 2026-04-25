@@ -1,50 +1,90 @@
 {% extends 'portfolio/base.html' %}
 
 {% block content %}
-<header class="hero-section text-center">
+<header class="hero-section">
     <div class="container">
-        <h1 class="display-3 fw-bold mb-3">Olena Makarova</h1>
-        <p class="lead mb-4">MSIS Student | Business Analyst | Data Storyteller</p>
-        <a href="{% url 'projects' %}" class="btn btn-light btn-lg px-4">View My Work</a>
+        <div class="row align-items-center">
+            <div class="col-lg-7 animate__animated animate__fadeInLeft">
+                <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill fw-bold mb-3">Available for New Roles</span>
+                <h1 class="display-3 fw-800 mb-4" style="font-weight: 800;">Turning Chaos Into <span class="text-primary">Structured Value.</span></h1>
+                <p class="lead text-muted mb-5 fs-4">MSIS Student at Baylor University specializing in Business Analysis and Data Storytelling.</p>
+                <div class="d-flex gap-3">
+                    <a href="{% url 'projects' %}" class="btn btn-primary btn-lg shadow">View Projects</a>
+                    <a href="{% url 'contact' %}" class="btn btn-outline-primary btn-lg">Get in Touch</a>
+                </div>
+            </div>
+            <div class="col-lg-5 d-none d-lg-block animate__animated animate__fadeInRight">
+                <div class="position-relative">
+                    <div class="bg-primary rounded-4 rotate-3 position-absolute w-100 h-100 opacity-10"></div>
+                    <div class="bg-white p-3 rounded-4 shadow-lg position-relative border">
+                        <div class="bg-light rounded-3 d-flex align-items-center justify-content-center" style="height: 400px;">
+                            <i class="bi bi-person-circle display-1 text-secondary opacity-25"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 
-<section class="section-padding">
+<section class="section-padding py-5">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <h2 class="fw-bold mb-4">Bridging the Gap Between Data and Human Stories</h2>
-                <p class="text-muted">{{ profile.about_me|truncatewords:50 }}</p>
-                <a href="{% url 'about' %}" class="btn btn-outline-primary mt-3">Read More About Me</a>
+        <div class="row g-5">
+            <div class="col-md-4 animate__animated animate__fadeInUp">
+                <div class="card p-4 h-100 border-0 shadow-sm">
+                    <div class="bg-primary-subtle rounded-3 p-3 w-fit-content mb-3 d-inline-block">
+                        <i class="bi bi-graph-up-arrow fs-3 text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold">Analytical Mindset</h4>
+                    <p class="text-muted">Transforming raw data into meaningful human stories and actionable business insights.</p>
+                </div>
             </div>
-            <div class="col-md-6 text-center">
-                <!-- Placeholder for a professional photo if available -->
-                <div class="bg-secondary text-white rounded p-5" style="height: 300px; display: flex; align-items: center; justify-content: center;">
-                    <h3>[ Professional Photo ]</h3>
+            <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
+                <div class="card p-4 h-100 border-0 shadow-sm">
+                    <div class="bg-warning-subtle rounded-3 p-3 w-fit-content mb-3 d-inline-block">
+                        <i class="bi bi-code-slash fs-3 text-warning"></i>
+                    </div>
+                    <h4 class="fw-bold">Technical Depth</h4>
+                    <p class="text-muted">Fluent in Python, SQL, and Tableau to organize messy information into useful structures.</p>
+                </div>
+            </div>
+            <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                <div class="card p-4 h-100 border-0 shadow-sm">
+                    <div class="bg-success-subtle rounded-3 p-3 w-fit-content mb-3 d-inline-block">
+                        <i class="bi bi-people fs-3 text-success"></i>
+                    </div>
+                    <h4 class="fw-bold">Collaborative</h4>
+                    <p class="text-muted">Experience working across HR, finance, and technical teams to optimize workflows.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="bg-light section-padding">
+<section class="py-5 bg-white border-top border-bottom">
     <div class="container">
-        <h2 class="text-center fw-bold mb-5">Featured Projects</h2>
+        <div class="d-flex justify-content-between align-items-end mb-5">
+            <div>
+                <h2 class="section-title">Featured Work</h2>
+                <p class="text-muted lead">A selection of my recent technical projects.</p>
+            </div>
+            <a href="{% url 'projects' %}" class="btn btn-link text-primary fw-bold text-decoration-none d-none d-md-block">Explore All <i class="bi bi-arrow-right"></i></a>
+        </div>
         <div class="row g-4">
             {% for project in featured_projects %}
             <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">{{ project.title }}</h5>
-                        <p class="card-text text-muted small">{{ project.summary }}</p>
-                        <a href="{% url 'project_detail' project.slug %}" class="btn btn-primary btn-sm mt-3">View Details</a>
+                <div class="card h-100 border-0">
+                    <div class="bg-light rounded-top p-5 text-center border-bottom">
+                        <i class="bi bi-folder2-open fs-1 text-secondary opacity-50"></i>
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold mb-2">{{ project.title }}</h5>
+                        <p class="text-muted small mb-4">{{ project.summary|truncatewords:20 }}</p>
+                        <a href="{% url 'project_detail' project.slug %}" class="text-primary fw-bold text-decoration-none small">Case Study <i class="bi bi-chevron-right"></i></a>
                     </div>
                 </div>
             </div>
             {% endfor %}
-        </div>
-        <div class="text-center mt-5">
-            <a href="{% url 'projects' %}" class="btn btn-secondary">View All Projects</a>
         </div>
     </div>
 </section>
