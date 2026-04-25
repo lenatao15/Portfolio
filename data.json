@@ -39,8 +39,20 @@
   }
 },
 {
+  "model": "portfolio.profile",
+  "pk": 2,
+  "fields": {
+    "name": "Olena Makarova",
+    "about_me": "I’m a Master of Science in Information Systems student at Baylor University with a concentration in Business Analysis (GPA: 4.0). \n\nMy background is a mix of sociology and technology, which means I don’t just look at data — I try to understand the human story behind it. I enjoy organizing messy information, finding patterns, and turning chaos into something structured and useful.\n\nI’ve worked in both administrative and data-focused roles, where I developed strong attention to detail, problem-solving skills, and the ability to work across teams. I’m especially interested in roles where I can combine analytical thinking with real-world impact.",
+    "email": "Olena_makarova1@baylor.edu",
+    "phone": "(707) 413-5847",
+    "linkedin": "https://www.linkedin.com/in/olena-makarova-a10687198/",
+    "github": ""
+  }
+},
+{
   "model": "portfolio.skill",
-  "pk": 1,
+  "pk": 24,
   "fields": {
     "name": "Data Analysis & Data Cleaning",
     "category": "technical",
@@ -49,7 +61,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 2,
+  "pk": 25,
   "fields": {
     "name": "SQL",
     "category": "technical",
@@ -58,7 +70,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 3,
+  "pk": 26,
   "fields": {
     "name": "Python",
     "category": "technical",
@@ -67,7 +79,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 4,
+  "pk": 27,
   "fields": {
     "name": "Tableau",
     "category": "technical",
@@ -76,7 +88,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 5,
+  "pk": 28,
   "fields": {
     "name": "Microsoft Excel",
     "category": "technical",
@@ -85,7 +97,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 6,
+  "pk": 29,
   "fields": {
     "name": "Lucidchart",
     "category": "technical",
@@ -94,7 +106,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 7,
+  "pk": 30,
   "fields": {
     "name": "Visio",
     "category": "technical",
@@ -103,7 +115,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 8,
+  "pk": 31,
   "fields": {
     "name": "Data Modeling",
     "category": "technical",
@@ -112,7 +124,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 9,
+  "pk": 32,
   "fields": {
     "name": "Basic Video Editing",
     "category": "technical",
@@ -121,7 +133,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 10,
+  "pk": 33,
   "fields": {
     "name": "Trend Analysis",
     "category": "analytical",
@@ -130,7 +142,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 11,
+  "pk": 34,
   "fields": {
     "name": "Data Interpretation",
     "category": "analytical",
@@ -139,7 +151,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 12,
+  "pk": 35,
   "fields": {
     "name": "Problem Solving",
     "category": "analytical",
@@ -148,7 +160,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 13,
+  "pk": 36,
   "fields": {
     "name": "Workflow Optimization",
     "category": "analytical",
@@ -157,7 +169,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 14,
+  "pk": 37,
   "fields": {
     "name": "Communication",
     "category": "soft",
@@ -166,7 +178,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 15,
+  "pk": 38,
   "fields": {
     "name": "Cross-functional Collaboration",
     "category": "soft",
@@ -175,7 +187,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 16,
+  "pk": 39,
   "fields": {
     "name": "Attention to Detail",
     "category": "soft",
@@ -184,7 +196,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 17,
+  "pk": 40,
   "fields": {
     "name": "Organization",
     "category": "soft",
@@ -193,7 +205,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 18,
+  "pk": 41,
   "fields": {
     "name": "Adaptability",
     "category": "soft",
@@ -202,7 +214,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 19,
+  "pk": 42,
   "fields": {
     "name": "Ukrainian",
     "category": "language",
@@ -211,7 +223,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 20,
+  "pk": 43,
   "fields": {
     "name": "Russian",
     "category": "language",
@@ -220,7 +232,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 21,
+  "pk": 44,
   "fields": {
     "name": "English",
     "category": "language",
@@ -229,7 +241,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 22,
+  "pk": 45,
   "fields": {
     "name": "Chinese",
     "category": "language",
@@ -238,7 +250,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 23,
+  "pk": 46,
   "fields": {
     "name": "Japanese",
     "category": "language",
@@ -247,7 +259,7 @@
 },
 {
   "model": "portfolio.experience",
-  "pk": 1,
+  "pk": 3,
   "fields": {
     "job_title": "Property Records Analyst",
     "company": "Total Tax Certificate",
@@ -259,7 +271,7 @@
 },
 {
   "model": "portfolio.experience",
-  "pk": 2,
+  "pk": 4,
   "fields": {
     "job_title": "Project Administrator",
     "company": "Stantec",
@@ -271,7 +283,7 @@
 },
 {
   "model": "portfolio.education",
-  "pk": 1,
+  "pk": 3,
   "fields": {
     "institution": "Baylor University",
     "location": "Waco, TX",
@@ -283,7 +295,7 @@
 },
 {
   "model": "portfolio.education",
-  "pk": 2,
+  "pk": 4,
   "fields": {
     "institution": "Kyiv National University of Culture and Arts",
     "location": "Kyiv, Ukraine",
@@ -295,14 +307,14 @@
 },
 {
   "model": "portfolio.certification",
-  "pk": 1,
+  "pk": 2,
   "fields": {
     "name": "HRCI Human Resource Associate Specialization Certificate"
   }
 },
 {
   "model": "portfolio.project",
-  "pk": 1,
+  "pk": 7,
   "fields": {
     "title": "Chatbot Project",
     "summary": "An intelligent conversational agent designed to improve customer support responsiveness.",
@@ -313,14 +325,14 @@
     "biggest_challenge": "Handling ambiguous user intent without losing conversation context.",
     "what_you_learned": "Learned the importance of prompt engineering and structured conversation flows.",
     "image": "",
-    "github_link": "https://github.com/olenamakarova96/chatbot-project",
+    "github_link": "https://github.com/lenatao15/chatbot-project",
     "demo_link": "",
     "slug": "chatbot-project"
   }
 },
 {
   "model": "portfolio.project",
-  "pk": 2,
+  "pk": 8,
   "fields": {
     "title": "n8n Agent Workflow Project",
     "summary": "Automated business processes using low-code workflow automation.",
@@ -331,14 +343,14 @@
     "biggest_challenge": "Managing complex branching logic for different lead categories.",
     "what_you_learned": "Gained deep understanding of webhooks and API authentication methods.",
     "image": "",
-    "github_link": "https://github.com/olenamakarova96/n8n-workflow",
+    "github_link": "https://github.com/lenatao15/n8n-workflow",
     "demo_link": "",
     "slug": "n8n-agent-workflow-project"
   }
 },
 {
   "model": "portfolio.project",
-  "pk": 3,
+  "pk": 9,
   "fields": {
     "title": "LangChain Agent Project",
     "summary": "A sophisticated AI agent capable of multi-step reasoning and tool usage.",
@@ -349,14 +361,14 @@
     "biggest_challenge": "Ensuring the agent didn't hallucinate SQL queries for complex joins.",
     "what_you_learned": "Mastered chain-of-thought prompting and vector store integration.",
     "image": "",
-    "github_link": "https://github.com/olenamakarova96/langchain-agent",
+    "github_link": "https://github.com/lenatao15/langchain-agent",
     "demo_link": "",
     "slug": "langchain-agent-project"
   }
 },
 {
   "model": "portfolio.project",
-  "pk": 4,
+  "pk": 10,
   "fields": {
     "title": "Google AI Studio Media Project",
     "summary": "Leveraging Gemini models for automated media analysis and content generation.",
@@ -367,14 +379,14 @@
     "biggest_challenge": "Optimizing token usage for long-form video content processing.",
     "what_you_learned": "Explored the capabilities of multimodal models in media contexts.",
     "image": "",
-    "github_link": "https://github.com/olenamakarova96/google-ai-media",
+    "github_link": "https://github.com/lenatao15/google-ai-media",
     "demo_link": "",
     "slug": "google-ai-studio-media-project"
   }
 },
 {
   "model": "portfolio.project",
-  "pk": 5,
+  "pk": 11,
   "fields": {
     "title": "Machine Learning Project (scikit-learn)",
     "summary": "Predictive model for identifying patterns in sociology-tech data.",
@@ -385,14 +397,14 @@
     "biggest_challenge": "Dealing with highly imbalanced classes in the social dataset.",
     "what_you_learned": "Learned advanced data imputation and cross-validation techniques.",
     "image": "",
-    "github_link": "https://github.com/olenamakarova96/ml-sociology",
+    "github_link": "https://github.com/lenatao15/ml-sociology",
     "demo_link": "",
     "slug": "machine-learning-project-scikit-learn"
   }
 },
 {
   "model": "portfolio.project",
-  "pk": 6,
+  "pk": 12,
   "fields": {
     "title": "Campus SkillSwap Django Project",
     "summary": "A community-driven platform for students to exchange skills and knowledge.",
@@ -403,7 +415,7 @@
     "biggest_challenge": "Implementing an efficient search and filtering system for skills.",
     "what_you_learned": "Deepened knowledge of Django's ORM and template inheritance.",
     "image": "",
-    "github_link": "https://github.com/olenamakarova96/campus-skillswap",
+    "github_link": "https://github.com/lenatao15/campus-skillswap",
     "demo_link": "",
     "slug": "campus-skillswap-django-project"
   }
