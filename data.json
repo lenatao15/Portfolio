@@ -39,18 +39,6 @@
   }
 },
 {
-  "model": "portfolio.profile",
-  "pk": 1,
-  "fields": {
-    "name": "Olena Makarova",
-    "about_me": "I’m a Master of Science in Information Systems student at Baylor University with a concentration in Business Analysis (GPA: 4.0). \r\n\r\nMy background is a mix of sociology and technology, which means I don’t just look at data — I try to understand the human story behind it. I enjoy organizing messy information, finding patterns, and turning chaos into something structured and useful.\r\n\r\nI’ve worked in both administrative and data-focused roles, where I developed strong attention to detail, problem-solving skills, and the ability to work across teams. I’m especially interested in roles where I can combine analytical thinking with real-world impact.",
-    "email": "Olena_makarova1@baylor.edu",
-    "phone": "(707) 413-5847",
-    "linkedin": "https://www.linkedin.com/in/olena-makarova-a10687198",
-    "github": "https://github.com/lenatao15"
-  }
-},
-{
   "model": "portfolio.skill",
   "pk": 1,
   "fields": {
