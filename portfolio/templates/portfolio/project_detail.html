@@ -3,91 +3,129 @@
 {% block title %}{{ project.title }} | Olena Makarova{% endblock %}
 
 {% block content %}
-<article class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 mx-auto">
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb mb-4">
-                    <li class="breadcrumb-item"><a href="{% url 'projects' %}">Projects</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">{{ project.title }}</li>
-                  </ol>
-                </nav>
+<article class="animate__animated animate__fadeIn">
+    <!-- Project Hero Header -->
+    <section class="hero-section pb-5 mb-5 border-bottom bg-white">
+        <div class="container">
+            <nav aria-label="breadcrumb" class="mb-4">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'projects' %}" class="text-decoration-none text-muted">Projects</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ project.title }}</li>
+              </ol>
+            </nav>
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-800 mb-3">{{ project.title }}</h1>
+                    <p class="lead text-primary fw-bold fs-4 mb-0">{{ project.summary }}</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                    <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
+                        {% for tool in project.tools_used.split %}
+                            <span class="badge bg-light text-primary border px-3 py-2 rounded-pill">{{ tool|cut:"," }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <h1 class="display-4 fw-bold mb-3">{{ project.title }}</h1>
-                <p class="lead text-primary mb-5 fw-semibold">{{ project.summary }}</p>
-
-                <!-- Visual Placeholder -->
-                <div class="bg-light border rounded mb-5 p-5 text-center shadow-sm" style="min-height: 400px; display: flex; align-items: center; justify-content: center;">
+    <div class="container pb-5">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <!-- Visual -->
+                <div class="card border-0 shadow-sm overflow-hidden mb-5">
                     {% if project.image %}
-                        <img src="{{ project.image.url }}" alt="{{ project.title }}" class="img-fluid rounded shadow">
+                        <img src="{{ project.image.url }}" alt="{{ project.title }}" class="img-fluid w-100" style="max-height: 500px; object-fit: cover;">
                     {% else %}
-                        <div class="text-center">
-                            <h3 class="text-muted">Visual Representation</h3>
-                            <p class="text-muted small">Charts, Screenshots, or Diagrams</p>
+                        <div class="bg-primary-subtle d-flex flex-column align-items-center justify-content-center py-5" style="min-height: 300px;">
+                            <i class="bi bi-image fs-1 text-primary opacity-25 mb-3"></i>
+                            <p class="text-primary fw-bold opacity-50">Project Visual</p>
                         </div>
                     {% endif %}
                 </div>
 
-                <div class="row g-5">
-                    <div class="col-md-8">
-                        <section class="mb-5">
-                            <h3 class="fw-bold mb-3">Business Problem</h3>
-                            <div class="p-3 bg-white border-start border-primary border-4 shadow-sm">
-                                {{ project.business_problem|linebreaks }}
-                            </div>
-                        </section>
-
-                        <section class="mb-5">
-                            <h3 class="fw-bold mb-3">Key Features</h3>
-                            {{ project.key_features|linebreaks }}
-                        </section>
-
-                        <section class="mb-5">
-                            <h3 class="fw-bold mb-3">My Role & Contribution</h3>
-                            {{ project.role|linebreaks }}
-                        </section>
-
-                        <section class="mb-5">
-                            <h3 class="fw-bold mb-3">Biggest Challenge</h3>
-                            <div class="p-3 bg-light rounded">
-                                {{ project.biggest_challenge|linebreaks }}
-                            </div>
-                        </section>
-
-                        <section class="mb-5">
-                            <h3 class="fw-bold mb-3">What I Learned</h3>
-                            {{ project.what_you_learned|linebreaks }}
-                        </section>
+                <!-- Content Sections -->
+                <div class="project-content">
+                    <div class="mb-5">
+                        <h3 class="fw-bold mb-3 d-flex align-items-center">
+                            <i class="bi bi-lightbulb text-warning me-3"></i> The Business Problem
+                        </h3>
+                        <div class="p-4 bg-white rounded-4 border-start border-warning border-4 shadow-sm">
+                            <p class="lead mb-0 fs-6">{{ project.business_problem|linebreaks }}</p>
+                        </div>
                     </div>
 
-                    <div class="col-md-4">
-                        <div class="sticky-top" style="top: 100px;">
-                            <div class="card mb-4 border-0 shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="fw-bold mb-3 text-primary">Tools Used</h5>
-                                    <div class="d-flex flex-wrap gap-2">
-                                        {% for tool in project.tools_used.split %}
-                                            <span class="badge bg-primary-subtle text-primary border border-primary-subtle">{{ tool|cut:"," }}</span>
-                                        {% endfor %}
-                                    </div>
-                                </div>
-                            </div>
-
-                            {% if project.github_link or project.demo_link %}
-                            <div class="card border-0 shadow-sm bg-primary text-white">
-                                <div class="card-body text-center py-4">
-                                    <h5 class="fw-bold mb-3">Explore Further</h5>
-                                    {% if project.github_link %}
-                                        <a href="{{ project.github_link }}" target="_blank" class="btn btn-light w-100 mb-2">View Code on GitHub</a>
-                                    {% endif %}
-                                    {% if project.demo_link %}
-                                        <a href="{{ project.demo_link }}" target="_blank" class="btn btn-outline-light w-100">Live Demo</a>
-                                    {% endif %}
-                                </div>
-                            </div>
-                            {% endif %}
+                    <div class="mb-5">
+                        <h3 class="fw-bold mb-3 d-flex align-items-center">
+                            <i class="bi bi-stars text-primary me-3"></i> Key Features
+                        </h3>
+                        <div class="ps-4">
+                            {{ project.key_features|linebreaks }}
                         </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h3 class="fw-bold mb-3 d-flex align-items-center">
+                            <i class="bi bi-person-workspace text-success me-3"></i> My Role & Contribution
+                        </h3>
+                        <div class="ps-4">
+                            {{ project.role|linebreaks }}
+                        </div>
+                    </div>
+
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="card h-100 p-4 border-0 bg-danger-subtle text-danger">
+                                <h4 class="fw-bold mb-3 d-flex align-items-center">
+                                    <i class="bi bi-exclamation-triangle-fill me-2"></i> Biggest Challenge
+                                </h4>
+                                <p class="small mb-0">{{ project.biggest_challenge }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 p-4 border-0 bg-success-subtle text-success">
+                                <h4 class="fw-bold mb-3 d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill me-2"></i> Key Learning
+                                </h4>
+                                <p class="small mb-0">{{ project.what_you_learned }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="sticky-top" style="top: 100px;">
+                    <div class="card p-4 border-0 bg-dark text-white mb-4">
+                        <h4 class="fw-bold mb-4">Project Links</h4>
+                        {% if project.github_link %}
+                        <a href="{{ project.github_link }}" target="_blank" class="btn btn-primary w-100 mb-3 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-github me-2"></i> Source Code
+                        </a>
+                        {% endif %}
+                        {% if project.demo_link %}
+                        <a href="{{ project.demo_link }}" target="_blank" class="btn btn-outline-light w-100 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-rocket-takeoff me-2"></i> Live Demo
+                        </a>
+                        {% endif %}
+                    </div>
+
+                    <div class="card p-4 border-0 bg-white">
+                        <h5 class="fw-bold mb-3">Project Specs</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2 d-flex justify-content-between">
+                                <span class="text-muted">Domain</span>
+                                <span class="fw-bold">Business Analysis</span>
+                            </li>
+                            <li class="mb-2 d-flex justify-content-between">
+                                <span class="text-muted">Type</span>
+                                <span class="fw-bold">MSIS Case Study</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <span class="text-muted">Status</span>
+                                <span class="badge bg-success-subtle text-success px-2">Completed</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
