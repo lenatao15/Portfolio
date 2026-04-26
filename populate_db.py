@@ -123,8 +123,11 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "role": "Workflow Architect - designed the end-to-end automation logic.",
             "biggest_challenge": "Managing complex branching logic for different lead categories.",
             "what_you_learned": "Gained deep understanding of webhooks and API authentication methods.",
-            "github_link": "https://github.com/lenatao15/n8n-workflow",
-            "icon_class": "bi-diagram-3-fill"
+            "github_link": "",
+            "demo_link": "https://docs.google.com/forms/d/e/1FAIpQLSeEDjPBJRxDx7y1x_tWTPIGi6OjiMHO0WYfAqr8fK5ZxQ9MDA/viewform?usp=dialog",
+            "icon_class": "bi-diagram-3-fill",
+            "static_image_1": "portfolio/video/Orchestrator.png",
+            "static_image_2": "portfolio/video/emailJack.png"
         },
         {
             "title": "LangChain Agent Project",

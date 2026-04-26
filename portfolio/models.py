@@ -64,7 +64,9 @@ class Project(models.Model):
     what_you_learned = models.TextField()
     image = models.ImageField(upload_to='projects/', blank=True, null=True)
     icon_class = models.CharField(max_length=50, default='bi-terminal')
-    video_static_path = models.CharField(max_length=255, blank=True, null=True) # New field
+    video_static_path = models.CharField(max_length=255, blank=True, null=True)
+    static_image_1 = models.CharField(max_length=255, blank=True, null=True) # New field
+    static_image_2 = models.CharField(max_length=255, blank=True, null=True) # New field
     github_link = models.URLField(blank=True)
     demo_link = models.URLField(blank=True)
     slug = models.SlugField(unique=True, blank=True)

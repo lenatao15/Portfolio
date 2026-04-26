@@ -37,21 +37,50 @@
     <div class="container pb-5">
         <div class="row g-5">
             <div class="col-lg-8">
-                <!-- Visual / Video -->
-                <div class="card border-0 shadow-sm overflow-hidden mb-5">
+                <!-- Visual / Video / Gallery -->
+                <div class="mb-5">
                     {% if project.video_static_path %}
-                        <div class="ratio ratio-16x9 bg-black">
-                            <video controls class="w-100 h-100">
-                                <source src="{% static project.video_static_path %}" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                        <div class="card border-0 shadow-sm overflow-hidden mb-4">
+                            <div class="ratio ratio-16x9 bg-black">
+                                <video controls class="w-100 h-100">
+                                    <source src="{% static project.video_static_path %}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
                         </div>
-                    {% elif project.image %}
-                        <img src="{{ project.image.url }}" alt="{{ project.title }}" class="img-fluid w-100" style="max-height: 500px; object-fit: cover;">
-                    {% else %}
-                        <div class="bg-primary-subtle d-flex flex-column align-items-center justify-content-center py-5" style="min-height: 300px;">
-                            <i class="bi {{ project.icon_class }} display-1 text-primary opacity-25 mb-3"></i>
-                            <p class="text-primary fw-bold opacity-50">Project Architecture & Logic</p>
+                    {% endif %}
+
+                    {% if project.static_image_1 or project.static_image_2 %}
+                        <div class="row g-4 mb-4">
+                            {% if project.static_image_1 %}
+                            <div class="col-md-{% if project.static_image_2 %}6{% else %}12{% endif %}">
+                                <div class="card border-0 shadow-sm overflow-hidden h-100">
+                                    <img src="{% static project.static_image_1 %}" alt="Project Workflow" class="img-fluid w-100 h-100 object-fit-contain bg-light p-2">
+                                    <div class="card-footer bg-white small text-muted text-center border-0">Workflow Logic</div>
+                                </div>
+                            </div>
+                            {% endif %}
+                            {% if project.static_image_2 %}
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm overflow-hidden h-100">
+                                    <img src="{% static project.static_image_2 %}" alt="Client Deliverable" class="img-fluid w-100 h-100 object-fit-contain bg-light p-2">
+                                    <div class="card-footer bg-white small text-muted text-center border-0">Client Output</div>
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+
+                    {% if not project.video_static_path and not project.static_image_1 and project.image %}
+                        <div class="card border-0 shadow-sm overflow-hidden mb-4">
+                            <img src="{{ project.image.url }}" alt="{{ project.title }}" class="img-fluid w-100" style="max-height: 500px; object-fit: cover;">
+                        </div>
+                    {% elif not project.video_static_path and not project.static_image_1 and not project.image %}
+                        <div class="card border-0 shadow-sm overflow-hidden mb-4">
+                            <div class="bg-primary-subtle d-flex flex-column align-items-center justify-content-center py-5" style="min-height: 300px;">
+                                <i class="bi {{ project.icon_class }} display-1 text-primary opacity-25 mb-3"></i>
+                                <p class="text-primary fw-bold opacity-50">Project Architecture & Logic</p>
+                            </div>
                         </div>
                     {% endif %}
                 </div>
