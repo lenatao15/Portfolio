@@ -111,7 +111,7 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "biggest_challenge": "Handling ambiguous user intent without losing conversation context.",
             "what_you_learned": "Learned the importance of prompt engineering and structured conversation flows.",
             "github_link": "https://github.com/lenatao15/chatbot-project",
-            "image": "projects/chatbot.png"
+            "icon_class": "bi-chat-dots-fill"
         },
         {
             "title": "n8n Agent Workflow Project",
@@ -123,7 +123,7 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "biggest_challenge": "Managing complex branching logic for different lead categories.",
             "what_you_learned": "Gained deep understanding of webhooks and API authentication methods.",
             "github_link": "https://github.com/lenatao15/n8n-workflow",
-            "image": "projects/n8n.png"
+            "icon_class": "bi-diagram-3-fill"
         },
         {
             "title": "LangChain Agent Project",
@@ -135,7 +135,7 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "biggest_challenge": "Ensuring the agent didn't hallucinate SQL queries for complex joins.",
             "what_you_learned": "Mastered chain-of-thought prompting and vector store integration.",
             "github_link": "https://github.com/lenatao15/langchain-agent",
-            "image": "projects/langchain.png"
+            "icon_class": "bi-robot"
         },
         {
             "title": "Google AI Studio Media Project",
@@ -147,7 +147,7 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "biggest_challenge": "Optimizing token usage for long-form video content processing.",
             "what_you_learned": "Explored the capabilities of multimodal models in media contexts.",
             "github_link": "https://github.com/lenatao15/google-ai-media",
-            "image": "projects/google_ai.png"
+            "icon_class": "bi-play-btn-fill"
         },
         {
             "title": "Machine Learning Project (LearningLog)",
@@ -159,7 +159,7 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "biggest_challenge": "Dealing with highly imbalanced classes in the social dataset.",
             "what_you_learned": "Learned advanced data imputation and cross-validation techniques.",
             "github_link": "https://github.com/lenatao15/LearningLogProject",
-            "image": "projects/ml.png"
+            "icon_class": "bi-graph-up-arrow"
         },
         {
             "title": "Campus SkillSwap Django Project",
@@ -171,7 +171,7 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "biggest_challenge": "Implementing an efficient search and filtering system for skills.",
             "what_you_learned": "Deepened knowledge of Django's ORM and template inheritance.",
             "github_link": "https://github.com/lenatao15/campus_skillswamp",
-            "image": "projects/skillswap.png"
+            "icon_class": "bi-people-fill"
         },
         {
             "title": "Handyman Project",
@@ -183,7 +183,7 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "biggest_challenge": "Implementing a real-time availability calendar for diverse services.",
             "what_you_learned": "Improved proficiency in complex relational database design and user experience optimization.",
             "github_link": "https://github.com/lenatao15/Handyman",
-            "image": "projects/skillswap.png"
+            "icon_class": "bi-tools"
         }
     ]
 

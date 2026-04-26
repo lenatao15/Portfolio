@@ -5,40 +5,46 @@
 {% block content %}
 <section class="hero-section pb-5">
     <div class="container text-center">
-        <h1 class="display-4 fw-800 mb-3 animate__animated animate__fadeInDown">Case <span class="text-primary">Studies.</span></h1>
-        <p class="lead text-muted animate__animated animate__fadeInUp">Detailed breakdowns of my technical and analytical projects.</p>
+        <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill fw-bold mb-3 animate__animated animate__fadeInDown">Technical Showcase</span>
+        <h1 class="display-4 fw-800 mb-3 animate__animated animate__fadeInDown" style="animation-delay: 0.1s;">Case <span class="text-primary">Studies.</span></h1>
+        <p class="lead text-muted animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">Analyzing business problems through technical implementation and data logic.</p>
     </div>
 </section>
 
 <div class="container mb-5">
     <div class="row g-4">
         {% for project in projects_list %}
-        <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp" style="animation-delay: {{ forloop.counter0|add:0 }}s;">
-            <div class="card h-100 border-0 overflow-hidden">
-                <div class="overflow-hidden border-bottom" style="height: 200px;">
-                    {% if project.image %}
-                        <img src="{{ project.image.url }}" alt="{{ project.title }}" class="w-100 h-100 object-fit-cover">
-                    {% else %}
-                        <div class="bg-primary-subtle d-flex align-items-center justify-content-center w-100 h-100">
-                            <i class="bi bi-code-square display-3 text-primary opacity-25"></i>
-                        </div>
-                    {% endif %}
-                </div>
-                <div class="card-body p-4">
-                    <div class="mb-3">
-                        {% for tool in project.tools_used.split %}
-                            {% if forloop.counter <= 3 %}
-                            <span class="badge bg-light text-primary border me-1 small">{{ tool|cut:"," }}</span>
-                            {% endif %}
-                        {% endfor %}
+        <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp" style="animation-delay: {{ forloop.counter0|add:0.1 }}s;">
+            <div class="card h-100 border-0 p-4 shadow-sm" style="transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);">
+                <div class="d-flex align-items-center mb-4">
+                    <div class="bg-primary-subtle text-primary rounded-4 p-3 shadow-sm border border-white">
+                        <i class="bi {{ project.icon_class }} fs-2"></i>
                     </div>
-                    <h4 class="fw-bold mb-3">{{ project.title }}</h4>
-                    <p class="text-muted small mb-4">{{ project.summary|truncatewords:25 }}</p>
-                    <a href="{% url 'project_detail' project.slug %}" class="btn btn-outline-primary w-100 fw-bold">View Case Study</a>
+                </div>
+                <div class="mb-3 d-flex flex-wrap gap-1">
+                    {% for tool in project.tools_used.split %}
+                        {% if forloop.counter <= 2 %}
+                        <span class="badge bg-white text-muted border px-2 py-1 small fw-500">{{ tool|cut:"," }}</span>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <h4 class="fw-bold mb-3">{{ project.title }}</h4>
+                <p class="text-muted small mb-4 line-clamp-3">{{ project.summary }}</p>
+                <div class="mt-auto">
+                    <a href="{% url 'project_detail' project.slug %}" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Analyze Project</a>
                 </div>
             </div>
         </div>
         {% endfor %}
     </div>
 </div>
+
+<style>
+    .line-clamp-3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+</style>
 {% endblock %}

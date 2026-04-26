@@ -28,29 +28,29 @@
 
 <section class="section-padding py-5">
     <div class="container">
-        <div class="row g-5">
+        <div class="row g-4">
             <div class="col-md-4 animate__animated animate__fadeInUp">
-                <div class="card p-4 h-100 border-0 shadow-sm">
-                    <div class="bg-primary-subtle rounded-3 p-3 w-fit-content mb-3 d-inline-block">
-                        <i class="bi bi-graph-up-arrow fs-3 text-primary"></i>
+                <div class="card p-4 h-100 border-0 shadow-sm" style="background: linear-gradient(145deg, #ffffff 0%, #f1f5f9 100%);">
+                    <div class="bg-primary text-white rounded-4 p-3 d-inline-block mb-4 shadow-sm" style="width: fit-content;">
+                        <i class="bi bi-graph-up-arrow fs-3"></i>
                     </div>
                     <h4 class="fw-bold">Analytical Mindset</h4>
                     <p class="text-muted">Transforming raw data into meaningful human stories and actionable business insights.</p>
                 </div>
             </div>
             <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
-                <div class="card p-4 h-100 border-0 shadow-sm">
-                    <div class="bg-warning-subtle rounded-3 p-3 w-fit-content mb-3 d-inline-block">
-                        <i class="bi bi-code-slash fs-3 text-warning"></i>
+                <div class="card p-4 h-100 border-0 shadow-sm" style="background: linear-gradient(145deg, #ffffff 0%, #fffbeb 100%);">
+                    <div class="bg-warning text-dark rounded-4 p-3 d-inline-block mb-4 shadow-sm" style="width: fit-content;">
+                        <i class="bi bi-code-slash fs-3"></i>
                     </div>
                     <h4 class="fw-bold">Technical Depth</h4>
                     <p class="text-muted">Fluent in Python, SQL, and Tableau to organize messy information into useful structures.</p>
                 </div>
             </div>
             <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
-                <div class="card p-4 h-100 border-0 shadow-sm">
-                    <div class="bg-success-subtle rounded-3 p-3 w-fit-content mb-3 d-inline-block">
-                        <i class="bi bi-people fs-3 text-success"></i>
+                <div class="card p-4 h-100 border-0 shadow-sm" style="background: linear-gradient(145deg, #ffffff 0%, #f0fdf4 100%);">
+                    <div class="bg-success text-white rounded-4 p-3 d-inline-block mb-4 shadow-sm" style="width: fit-content;">
+                        <i class="bi bi-people fs-3"></i>
                     </div>
                     <h4 class="fw-bold">Collaborative</h4>
                     <p class="text-muted">Experience working across HR, finance, and technical teams to optimize workflows.</p>
@@ -65,28 +65,23 @@
         <div class="d-flex justify-content-between align-items-end mb-5">
             <div>
                 <h2 class="section-title">Featured Work</h2>
-                <p class="text-muted lead">A selection of my recent technical projects.</p>
+                <p class="text-muted lead">Impactful case studies across business and AI domains.</p>
             </div>
             <a href="{% url 'projects' %}" class="btn btn-link text-primary fw-bold text-decoration-none d-none d-md-block">Explore All <i class="bi bi-arrow-right"></i></a>
         </div>
         <div class="row g-4">
             {% for project in featured_projects %}
             <div class="col-md-4">
-                <div class="card h-100 border-0">
-                    <div class="rounded-top overflow-hidden border-bottom" style="height: 200px;">
-                        {% if project.image %}
-                            <img src="{{ project.image.url }}" alt="{{ project.title }}" class="w-100 h-100 object-fit-cover">
-                        {% else %}
-                            <div class="bg-light w-100 h-100 d-flex align-items-center justify-content-center">
-                                <i class="bi bi-folder2-open fs-1 text-secondary opacity-50"></i>
-                            </div>
-                        {% endif %}
+                <div class="card h-100 border-0 p-4" style="background: #f8fafc; border: 1px solid rgba(0,0,0,0.03) !important;">
+                    <div class="d-flex justify-content-between align-items-start mb-4">
+                        <div class="bg-white rounded-3 shadow-sm p-3 border">
+                            <i class="bi {{ project.icon_class }} fs-2 text-primary"></i>
+                        </div>
+                        <span class="badge bg-white text-dark border shadow-sm">Case Study</span>
                     </div>
-                    <div class="card-body p-4">
-                        <h5 class="fw-bold mb-2">{{ project.title }}</h5>
-                        <p class="text-muted small mb-4">{{ project.summary|truncatewords:20 }}</p>
-                        <a href="{% url 'project_detail' project.slug %}" class="text-primary fw-bold text-decoration-none small">Case Study <i class="bi bi-chevron-right"></i></a>
-                    </div>
+                    <h5 class="fw-bold mb-2">{{ project.title }}</h5>
+                    <p class="text-muted small mb-4">{{ project.summary|truncatewords:20 }}</p>
+                    <a href="{% url 'project_detail' project.slug %}" class="text-primary fw-bold text-decoration-none mt-auto">View Breakdown <i class="bi bi-arrow-right-short"></i></a>
                 </div>
             </div>
             {% endfor %}
