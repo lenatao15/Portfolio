@@ -37,6 +37,25 @@
     <div class="container pb-5">
         <div class="row g-5">
             <div class="col-lg-8">
+                <!-- Visual / Video -->
+                <div class="card border-0 shadow-sm overflow-hidden mb-5">
+                    {% if project.video_static_path %}
+                        <div class="ratio ratio-16x9 bg-black">
+                            <video controls class="w-100 h-100">
+                                <source src="{% static project.video_static_path %}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    {% elif project.image %}
+                        <img src="{{ project.image.url }}" alt="{{ project.title }}" class="img-fluid w-100" style="max-height: 500px; object-fit: cover;">
+                    {% else %}
+                        <div class="bg-primary-subtle d-flex flex-column align-items-center justify-content-center py-5" style="min-height: 300px;">
+                            <i class="bi {{ project.icon_class }} display-1 text-primary opacity-25 mb-3"></i>
+                            <p class="text-primary fw-bold opacity-50">Project Architecture & Logic</p>
+                        </div>
+                    {% endif %}
+                </div>
+
                 <!-- High-Impact Problem Statement -->
                 <div class="p-5 bg-white rounded-5 border shadow-sm mb-5 position-relative overflow-hidden">
                     <div class="position-absolute top-0 end-0 p-4 opacity-10">

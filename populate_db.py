@@ -147,8 +147,9 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "role": "Integration Specialist - connected Gemini API to the media processing pipeline.",
             "biggest_challenge": "Optimizing token usage for long-form video content processing.",
             "what_you_learned": "Explored the capabilities of multimodal models in media contexts.",
-            "github_link": "https://github.com/lenatao15/google-ai-media",
-            "icon_class": "bi-play-btn-fill"
+            "github_link": "",
+            "icon_class": "bi-play-btn-fill",
+            "video_static_path": "portfolio/video/joker.mp4"
         },
         {
             "title": "Machine Learning Project (LearningLog)",
