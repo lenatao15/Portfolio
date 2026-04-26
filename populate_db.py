@@ -150,7 +150,7 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "image": "projects/google_ai.png"
         },
         {
-            "title": "Machine Learning Project (scikit-learn)",
+            "title": "Machine Learning Project (LearningLog)",
             "summary": "Predictive model for identifying patterns in sociology-tech data.",
             "business_problem": "Identifying key factors that influence technology adoption in diverse social groups.",
             "tools_used": "Python, Scikit-learn, Pandas, Matplotlib",
@@ -158,7 +158,7 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "role": "Data Scientist - performed data cleaning and model training.",
             "biggest_challenge": "Dealing with highly imbalanced classes in the social dataset.",
             "what_you_learned": "Learned advanced data imputation and cross-validation techniques.",
-            "github_link": "https://github.com/lenatao15/ml-sociology",
+            "github_link": "https://github.com/lenatao15/LearningLogProject",
             "image": "projects/ml.png"
         },
         {
@@ -170,7 +170,19 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "role": "Full Stack Developer - built both the database schema and the frontend.",
             "biggest_challenge": "Implementing an efficient search and filtering system for skills.",
             "what_you_learned": "Deepened knowledge of Django's ORM and template inheritance.",
-            "github_link": "https://github.com/lenatao15/campus-skillswap",
+            "github_link": "https://github.com/lenatao15/campus_skillswamp",
+            "image": "projects/skillswap.png"
+        },
+        {
+            "title": "Handyman Project",
+            "summary": "A project focused on connecting homeowners with reliable repair services.",
+            "business_problem": "Homeowners struggled to find verified and available handyman services in their local area.",
+            "tools_used": "Python, Django, Bootstrap, SQLite",
+            "key_features": "Service listings, user reviews, booking management.",
+            "role": "Lead Developer - architected the database and service flow.",
+            "biggest_challenge": "Implementing a real-time availability calendar for diverse services.",
+            "what_you_learned": "Improved proficiency in complex relational database design and user experience optimization.",
+            "github_link": "https://github.com/lenatao15/Handyman",
             "image": "projects/skillswap.png"
         }
     ]
