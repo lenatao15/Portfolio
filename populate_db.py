@@ -18,7 +18,8 @@ My background is a mix of sociology and technology, which means I don’t just l
 I’ve worked in both administrative and data-focused roles, where I developed strong attention to detail, problem-solving skills, and the ability to work across teams. I’m especially interested in roles where I can combine analytical thinking with real-world impact.""",
         email="Olena_makarova1@baylor.edu",
         phone="(707) 413-5847",
-        linkedin="https://www.linkedin.com/in/olena-makarova-a10687198/"
+        linkedin="https://www.linkedin.com/in/olena-makarova-a10687198/",
+        github="https://github.com/lenatao15/"
     )
 
     # ... (skipping some lines for brevity in instruction, will apply actual replacement)
