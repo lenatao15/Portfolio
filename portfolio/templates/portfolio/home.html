@@ -73,8 +73,14 @@
             {% for project in featured_projects %}
             <div class="col-md-4">
                 <div class="card h-100 border-0">
-                    <div class="bg-light rounded-top p-5 text-center border-bottom">
-                        <i class="bi bi-folder2-open fs-1 text-secondary opacity-50"></i>
+                    <div class="rounded-top overflow-hidden border-bottom" style="height: 200px;">
+                        {% if project.image %}
+                            <img src="{{ project.image.url }}" alt="{{ project.title }}" class="w-100 h-100 object-fit-cover">
+                        {% else %}
+                            <div class="bg-light w-100 h-100 d-flex align-items-center justify-content-center">
+                                <i class="bi bi-folder2-open fs-1 text-secondary opacity-50"></i>
+                            </div>
+                        {% endif %}
                     </div>
                     <div class="card-body p-4">
                         <h5 class="fw-bold mb-2">{{ project.title }}</h5>

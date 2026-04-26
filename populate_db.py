@@ -110,7 +110,8 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "role": "Lead Developer - responsible for backend logic and API integration.",
             "biggest_challenge": "Handling ambiguous user intent without losing conversation context.",
             "what_you_learned": "Learned the importance of prompt engineering and structured conversation flows.",
-            "github_link": "https://github.com/lenatao15/chatbot-project"
+            "github_link": "https://github.com/lenatao15/chatbot-project",
+            "image": "projects/chatbot.png"
         },
         {
             "title": "n8n Agent Workflow Project",
@@ -121,7 +122,8 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "role": "Workflow Architect - designed the end-to-end automation logic.",
             "biggest_challenge": "Managing complex branching logic for different lead categories.",
             "what_you_learned": "Gained deep understanding of webhooks and API authentication methods.",
-            "github_link": "https://github.com/lenatao15/n8n-workflow"
+            "github_link": "https://github.com/lenatao15/n8n-workflow",
+            "image": "projects/n8n.png"
         },
         {
             "title": "LangChain Agent Project",
@@ -132,7 +134,8 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "role": "AI Engineer - implemented the LangChain reasoning engine.",
             "biggest_challenge": "Ensuring the agent didn't hallucinate SQL queries for complex joins.",
             "what_you_learned": "Mastered chain-of-thought prompting and vector store integration.",
-            "github_link": "https://github.com/lenatao15/langchain-agent"
+            "github_link": "https://github.com/lenatao15/langchain-agent",
+            "image": "projects/langchain.png"
         },
         {
             "title": "Google AI Studio Media Project",
@@ -143,7 +146,8 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "role": "Integration Specialist - connected Gemini API to the media processing pipeline.",
             "biggest_challenge": "Optimizing token usage for long-form video content processing.",
             "what_you_learned": "Explored the capabilities of multimodal models in media contexts.",
-            "github_link": "https://github.com/lenatao15/google-ai-media"
+            "github_link": "https://github.com/lenatao15/google-ai-media",
+            "image": "projects/google_ai.png"
         },
         {
             "title": "Machine Learning Project (scikit-learn)",
@@ -154,7 +158,8 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "role": "Data Scientist - performed data cleaning and model training.",
             "biggest_challenge": "Dealing with highly imbalanced classes in the social dataset.",
             "what_you_learned": "Learned advanced data imputation and cross-validation techniques.",
-            "github_link": "https://github.com/lenatao15/ml-sociology"
+            "github_link": "https://github.com/lenatao15/ml-sociology",
+            "image": "projects/ml.png"
         },
         {
             "title": "Campus SkillSwap Django Project",
@@ -165,7 +170,8 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "role": "Full Stack Developer - built both the database schema and the frontend.",
             "biggest_challenge": "Implementing an efficient search and filtering system for skills.",
             "what_you_learned": "Deepened knowledge of Django's ORM and template inheritance.",
-            "github_link": "https://github.com/lenatao15/campus-skillswap"
+            "github_link": "https://github.com/lenatao15/campus-skillswap",
+            "image": "projects/skillswap.png"
         }
     ]
 
