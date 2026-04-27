@@ -121,15 +121,16 @@ I’ve worked in both administrative and data-focused roles, where I developed s
     projects_data = [
         {
             "title": "Chatbot Project",
-            "summary": "An intelligent conversational agent designed to improve customer support responsiveness.",
+            "summary": "An intelligent conversational agent created using Chatbase to improve customer support responsiveness.",
             "business_problem": "Customer support teams were overwhelmed with repetitive queries, leading to long wait times.",
-            "tools_used": "Python, OpenAI API, Flask",
-            "key_features": "Natural language understanding, automated FAQ resolution, seamless human handoff.",
-            "role": "Lead Developer - responsible for backend logic and API integration.",
-            "biggest_challenge": "Handling ambiguous user intent without losing conversation context.",
-            "what_you_learned": "Learned the importance of prompt engineering and structured conversation flows.",
-            "github_link": "https://github.com/lenatao15/chatbot-project",
-            "icon_class": "bi-chat-dots-fill"
+            "tools_used": "Chatbase, GPT-4, Custom Knowledge Base",
+            "key_features": "Trained on specific business documentation, real-time natural language understanding, and automated FAQ resolution.",
+            "role": "Lead Architect - responsible for data curation, model training via Chatbase, and UI integration.",
+            "biggest_challenge": "Refining the knowledge base to ensure high accuracy in technical responses.",
+            "what_you_learned": "Mastered the process of creating custom AI assistants through Chatbase, focusing on data-driven response generation.",
+            "github_link": "",
+            "icon_class": "bi-chat-dots-fill",
+            "static_image_1": "portfolio/video/chatbase.png"
         },
         {
             "title": "n8n Agent Workflow Project",
