@@ -3,47 +3,40 @@
 {% block title %}Contact | Olena Makarova{% endblock %}
 
 {% block content %}
-<section class="section-padding">
+<section class="py-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 mx-auto">
-                <div class="card p-5 border-0 shadow-sm">
-                    <h2 class="fw-bold mb-4">Get in Touch</h2>
+                <div class="card p-5">
+                    <div class="section-title">CONNECT</div>
+                    <h1 class="display-4 mb-4">Get in Touch</h1>
                     <p class="text-muted mb-5">I’m especially interested in roles where I can combine analytical thinking with real-world impact. Feel free to reach out!</p>
                     
-                    <div class="mb-4">
-                        <h5 class="fw-bold mb-1">Email</h5>
-                        <a href="mailto:{{ profile.email }}" class="text-primary text-decoration-none lead">{{ profile.email }}</a>
-                    </div>
-                    
-                    <div class="mb-4">
-                        <h5 class="fw-bold mb-1">Phone</h5>
-                        <p class="lead text-muted">{{ profile.phone }}</p>
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <h6 class="fw-bold text-primary mb-1">EMAIL</h6>
+                            <a href="mailto:{{ profile.email }}" class="text-muted text-decoration-none fw-bold">{{ profile.email }}</a>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold text-primary mb-1">PHONE</h6>
+                            <p class="text-muted fw-bold mb-0">{{ profile.phone }}</p>
+                        </div>
                     </div>
 
-                    {% if profile.linkedin %}
-                    <div class="mb-4">
-                        <h5 class="fw-bold mb-1">LinkedIn</h5>
-                        <a href="{{ profile.linkedin }}" target="_blank" class="text-primary text-decoration-none lead">Professional Profile</a>
-                    </div>
-                    {% endif %}
-
-                    <hr class="my-4">
-                    
                     <form>
-                        <div class="mb-3">
-                            <label class="form-label">Name</label>
-                            <input type="text" class="form-control" placeholder="Your Name">
+                        <div class="mb-4">
+                            <label class="form-label small fw-bold text-muted">NAME</label>
+                            <input type="text" class="form-control border-0 bg-light p-3 rounded-4" placeholder="Your name">
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Email</label>
-                            <input type="email" class="form-control" placeholder="Your Email">
+                        <div class="mb-4">
+                            <label class="form-label small fw-bold text-muted">EMAIL</label>
+                            <input type="email" class="form-control border-0 bg-light p-3 rounded-4" placeholder="Your email">
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Message</label>
-                            <textarea class="form-control" rows="4" placeholder="How can I help you?"></textarea>
+                        <div class="mb-4">
+                            <label class="form-label small fw-bold text-muted">MESSAGE</label>
+                            <textarea class="form-control border-0 bg-light p-3 rounded-4" rows="4" placeholder="How can I help you?"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100 py-3 mt-3 fw-bold">Send Message</button>
+                        <button type="submit" class="btn btn-primary w-100 py-3 shadow-lg">Send Message</button>
                     </form>
                 </div>
             </div>

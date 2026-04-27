@@ -3,82 +3,51 @@
 {% block title %}Skills | Olena Makarova{% endblock %}
 
 {% block content %}
-<section class="hero-section pb-5">
+<section class="hero-section py-5">
     <div class="container text-center">
-        <h1 class="display-4 fw-800 mb-3 animate__animated animate__fadeInDown">Technical <span class="text-primary">Ecosystem.</span></h1>
-        <p class="lead text-muted animate__animated animate__fadeInUp">The tools and methodologies I use to drive business impact.</p>
+        <div class="section-title">EXPERTISE</div>
+        <h1 class="display-3 mb-3">Skills & <span class="text-primary">Toolbox.</span></h1>
+        <p class="lead text-muted mx-auto" style="max-width: 700px;">A combination of technical depth, analytical thinking, and human-centered design.</p>
     </div>
 </section>
 
 <div class="container mb-5">
-    <div class="row g-4">
-        <!-- Technical -->
-        <div class="col-md-6 animate__animated animate__fadeInLeft">
-            <div class="card p-5 h-100 border-0">
-                <div class="d-flex align-items-center mb-4">
-                    <div class="bg-primary text-white rounded-3 p-3 me-3">
-                        <i class="bi bi-cpu fs-4"></i>
-                    </div>
-                    <h3 class="fw-bold mb-0">Data & Programming</h3>
-                </div>
+    <div class="row g-5">
+        <div class="col-md-6">
+            <div class="card p-5 h-100">
+                <h3 class="h4 mb-4 fw-bold">Technical Skills</h3>
                 <div class="d-flex flex-wrap gap-2">
                     {% for skill in skills_technical %}
-                        <span class="badge-skill">{{ skill.name }}</span>
+                    <span class="badge-skill">{{ skill.name }}</span>
                     {% endfor %}
                 </div>
             </div>
         </div>
-
-        <!-- Analytical -->
-        <div class="col-md-6 animate__animated animate__fadeInRight">
-            <div class="card p-5 h-100 border-0">
-                <div class="d-flex align-items-center mb-4">
-                    <div class="bg-warning text-dark rounded-3 p-3 me-3">
-                        <i class="bi bi-search fs-4"></i>
-                    </div>
-                    <h3 class="fw-bold mb-0">Business Analysis</h3>
-                </div>
-                <div class="d-flex flex-wrap gap-2">
-                    {% for skill in skills_analytical %}
+        <div class="col-md-6">
+            <div class="card p-5 h-100">
+                <h3 class="h4 mb-4 fw-bold">Analytical & Soft Skills</h3>
+                <div class="mb-4">
+                    <div class="d-flex flex-wrap gap-2">
+                        {% for skill in skills_analytical %}
                         <span class="badge-skill">{{ skill.name }}</span>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-
-        <!-- Soft Skills -->
-        <div class="col-md-6 animate__animated animate__fadeInLeft">
-            <div class="card p-5 h-100 border-0">
-                <div class="d-flex align-items-center mb-4">
-                    <div class="bg-success text-white rounded-3 p-3 me-3">
-                        <i class="bi bi-chat-heart fs-4"></i>
+                        {% endfor %}
                     </div>
-                    <h3 class="fw-bold mb-0">Collaboration</h3>
                 </div>
                 <div class="d-flex flex-wrap gap-2">
                     {% for skill in skills_soft %}
-                        <span class="badge-skill">{{ skill.name }}</span>
+                    <span class="badge-skill" style="border-color: rgba(253, 164, 175, 0.2); color: #ec4899;">{{ skill.name }}</span>
                     {% endfor %}
                 </div>
             </div>
         </div>
-
-        <!-- Languages -->
-        <div class="col-md-6 animate__animated animate__fadeInRight">
-            <div class="card p-5 h-100 border-0">
-                <div class="d-flex align-items-center mb-4">
-                    <div class="bg-info text-dark rounded-3 p-3 me-3">
-                        <i class="bi bi-translate fs-4"></i>
-                    </div>
-                    <h3 class="fw-bold mb-0">Linguistic Ability</h3>
-                </div>
-                <div class="row w-100">
+        <div class="col-12">
+            <div class="card p-5">
+                <h3 class="h4 mb-4 fw-bold text-center">Languages</h3>
+                <div class="row text-center g-4">
                     {% for lang in languages %}
-                    <div class="col-6 mb-3">
-                        <div class="p-3 bg-light rounded-3">
-                            <h6 class="fw-bold mb-1">{{ lang.name }}</h6>
-                            <small class="text-primary fw-bold">{{ lang.proficiency }}</small>
-                        </div>
+                    <div class="col-md-3">
+                        <h5 class="fw-bold mb-1">{{ lang.name }}</h5>
+                        <p class="text-muted small mb-0">{{ lang.proficiency }}</p>
                     </div>
                     {% endfor %}
                 </div>

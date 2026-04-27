@@ -11,7 +11,7 @@ def populate():
     Profile.objects.all().delete()
     profile = Profile.objects.create(
         name="Olena Makarova",
-        about_me="""I’m a Master of Science in Information Systems student at Baylor University with a concentration in Business Analysis (GPA: 4.0). 
+        about_me="""I’m a Master of Science in Information Systems student at Baylor University with a concentration in Business Analysis. 
 
 My background is a mix of sociology and technology, which means I don’t just look at data — I try to understand the human story behind it. I enjoy organizing messy information, finding patterns, and turning chaos into something structured and useful.
 
@@ -81,7 +81,7 @@ I’ve worked in both administrative and data-focused roles, where I developed s
         location="Waco, TX",
         degree="Master of Science in Information Systems",
         graduation_date="Expected June 2026",
-        gpa="4.0",
+        gpa="",
         details="Concentration: Business Analysis"
     )
     Education.objects.create(

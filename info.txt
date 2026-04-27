@@ -1,7 +1,7 @@
 # Olena Makarova
 
 ## About Me
-I’m a Master of Science in Information Systems student at Baylor University with a concentration in Business Analysis (GPA: 4.0). 
+I’m a Master of Science in Information Systems student at Baylor University with a concentration in Business Analysis. 
 
 My background is a mix of sociology and technology, which means I don’t just look at data — I try to understand the human story behind it. I enjoy organizing messy information, finding patterns, and turning chaos into something structured and useful.
 
@@ -70,7 +70,6 @@ April 2023 – December 2024
 Master of Science in Information Systems  
 Expected Graduation: June 2026  
 - Concentration: Business Analysis  
-- GPA: 4.0  
 
 ### Kyiv National University of Culture and Arts — Kyiv, Ukraine  
 Bachelor of Sociology  

@@ -6,42 +6,40 @@
 {% block content %}
 <section class="hero-section py-5">
     <div class="container text-center">
-        <div class="d-inline-block bg-accent px-4 py-1 border border-2 border-dark fw-bold mb-4 shadow-sm" style="background: var(--accent);">
-            Portfolio Index
-        </div>
+        <div class="section-title">PORTFOLIO ARCHIVE</div>
         <h1 class="display-3 mb-3">
-            Case <span style="background: var(--primary); color: white; padding: 0 15px; border: 3px solid black;">Studies.</span>
+            Selected <span class="text-primary">Case Studies.</span>
         </h1>
-        <p class="lead text-dark mx-auto fw-bold" style="max-width: 700px;">
+        <p class="lead text-muted mx-auto" style="max-width: 700px;">
             A deep dive into how I solve complex business problems using technical logic and human-centered design.
         </p>
     </div>
 </section>
 
 <div class="container mb-5">
-    <div class="row g-4">
+    <div class="row g-5">
         {% for project in projects_list %}
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 p-0 overflow-hidden">
                 {% if project.static_image_1 %}
-                    <img src="{% static project.static_image_1 %}" class="card-img-top border-bottom border-2 border-dark lightbox-trigger" style="height: 200px; object-fit: cover; cursor: pointer;" alt="{{ project.title }}">
+                    <img src="{% static project.static_image_1 %}" class="card-img-top lightbox-trigger" style="height: 240px; object-fit: cover; cursor: pointer;" alt="{{ project.title }}">
                 {% elif project.image %}
-                    <img src="{{ project.image.url }}" class="card-img-top border-bottom border-2 border-dark lightbox-trigger" style="height: 200px; object-fit: cover; cursor: pointer;" alt="{{ project.title }}">
+                    <img src="{{ project.image.url }}" class="card-img-top lightbox-trigger" style="height: 240px; object-fit: cover; cursor: pointer;" alt="{{ project.title }}">
                 {% else %}
-                    <div class="card-img-top border-bottom border-2 border-dark d-flex align-items-center justify-content-center text-white fw-bold px-3 text-center" style="height: 200px; background: {% cycle 'var(--primary)' 'var(--secondary)' 'var(--accent)' %};">
-                        <span class="fs-4">{{ project.title|upper }}</span>
+                    <div class="card-img-top d-flex align-items-center justify-content-center text-white fw-bold px-3 text-center" style="height: 240px; background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);">
+                        <span class="fs-5">{{ project.title|upper }}</span>
                     </div>
                 {% endif %}
                 <div class="p-4">
                     <div class="mb-3 d-flex flex-wrap gap-2">
                         {% for tool in project.tools_used.split %}
                             {% if forloop.counter <= 3 %}
-                            <span class="small fw-bold border border-2 border-dark px-2 py-1 bg-light">{{ tool|cut:"," }}</span>
+                            <span class="small text-primary fw-bold bg-primary bg-opacity-10 px-2 py-1 rounded">{{ tool|cut:"," }}</span>
                             {% endif %}
                         {% endfor %}
                     </div>
-                    <h4 class="mb-3">{{ project.title }}</h4>
-                    <p class="small mb-4 text-dark line-clamp-3">{{ project.summary }}</p>
+                    <h4 class="h5 mb-3">{{ project.title }}</h4>
+                    <p class="small text-muted mb-4 line-clamp-3">{{ project.summary }}</p>
                     <div class="mt-auto">
                         <a href="{% url 'project_detail' project.slug %}" class="btn btn-outline-primary w-100">Analyze Case</a>
                     </div>

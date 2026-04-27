@@ -6,13 +6,11 @@
 {% block content %}
 <section class="hero-section py-5">
     <div class="container text-center">
-        <div class="d-inline-block bg-accent px-4 py-1 border border-2 border-dark fw-bold mb-4 shadow-sm" style="background: var(--accent);">
-            Professional Growth
-        </div>
+        <div class="section-title">PROFESSIONAL GROWTH</div>
         <h1 class="display-3 mb-3">
-            My <span style="background: var(--primary); color: white; padding: 0 15px; border: 3px solid black;">Certifications.</span>
+            My <span class="text-primary">Certifications.</span>
         </h1>
-        <p class="lead text-dark mx-auto fw-bold" style="max-width: 700px;">
+        <p class="lead text-muted mx-auto" style="max-width: 700px;">
             A collection of verified skills and specialized training in AI, Design Thinking, and Risk Management.
         </p>
     </div>
@@ -21,20 +19,20 @@
 <div class="container mb-5">
     <div class="row g-5">
         {% for cert in certifications_list %}
-        <div class="col-md-6 col-lg-6">
+        <div class="col-md-6">
             <div class="card h-100 p-0 overflow-hidden">
                 <div class="row g-0 h-100">
-                    <div class="col-md-5 border-end border-2 border-dark bg-light d-flex align-items-center justify-content-center p-3">
+                    <div class="col-md-5 bg-light d-flex align-items-center justify-content-center p-4">
                         {% if cert.static_image_path %}
-                            <img src="{% static cert.static_image_path %}" class="img-fluid border border-2 border-dark shadow-sm lightbox-trigger" style="cursor: pointer; max-height: 250px;" alt="{{ cert.name }}">
+                            <img src="{% static cert.static_image_path %}" class="img-fluid rounded shadow-sm lightbox-trigger" style="cursor: pointer; max-height: 250px;" alt="{{ cert.name }}">
                         {% else %}
-                            <i class="bi bi-patch-check-fill display-1 text-primary"></i>
+                            <i class="bi bi-patch-check-fill display-1 text-primary opacity-20"></i>
                         {% endif %}
                     </div>
                     <div class="col-md-7">
-                        <div class="p-4">
-                            <h4 class="mb-3">{{ cert.name }}</h4>
-                            <p class="text-dark fw-bold small mb-0">{{ cert.description }}</p>
+                        <div class="p-5">
+                            <h4 class="h5 mb-3 fw-bold">{{ cert.name }}</h4>
+                            <p class="text-muted small mb-0">{{ cert.description }}</p>
                         </div>
                     </div>
                 </div>
