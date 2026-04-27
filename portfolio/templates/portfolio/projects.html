@@ -5,9 +5,14 @@
 {% block content %}
 <section class="hero-section pb-5">
     <div class="container text-center">
-        <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill fw-bold mb-3 animate__animated animate__fadeInDown">Technical Showcase</span>
-        <h1 class="display-4 fw-800 mb-3 animate__animated animate__fadeInDown" style="animation-delay: 0.1s;">Case <span class="text-primary">Studies.</span></h1>
-        <p class="lead text-muted animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">Analyzing business problems through technical implementation and data logic.</p>
+        <div class="d-inline-flex align-items-center bg-white bg-opacity-10 border border-white border-opacity-10 rounded-pill px-3 py-2 mb-4 animate__animated animate__fadeInDown">
+            <span class="badge bg-primary rounded-circle p-1 me-2"><i class="bi bi-folder-fill"></i></span>
+            <span class="small fw-bold text-white">Portfolio Architecture</span>
+        </div>
+        <h1 class="display-3 fw-800 mb-3 animate__animated animate__fadeInDown" style="animation-delay: 0.1s;">Case <span class="text-gradient">Studies.</span></h1>
+        <p class="lead text-muted animate__animated animate__fadeInUp mx-auto" style="animation-delay: 0.2s; max-width: 700px;">
+            A deep dive into how I solve complex business problems using <span class="text-white">technical logic</span> and human-centered design.
+        </p>
     </div>
 </section>
 
@@ -15,23 +20,25 @@
     <div class="row g-4">
         {% for project in projects_list %}
         <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp" style="animation-delay: {{ forloop.counter0|add:0.1 }}s;">
-            <div class="card h-100 border-0 p-4 shadow-sm" style="transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);">
-                <div class="d-flex align-items-center mb-4">
-                    <div class="bg-primary-subtle text-primary rounded-4 p-3 shadow-sm border border-white">
-                        <i class="bi {{ project.icon_class }} fs-2"></i>
+            <div class="card h-100 p-0 overflow-hidden">
+                <div class="p-5">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="glass-icon rounded-4 p-3 border-opacity-10">
+                            <i class="bi {{ project.icon_class }} fs-2 text-primary"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="mb-3 d-flex flex-wrap gap-1">
-                    {% for tool in project.tools_used.split %}
-                        {% if forloop.counter <= 2 %}
-                        <span class="badge bg-white text-muted border px-2 py-1 small fw-500">{{ tool|cut:"," }}</span>
-                        {% endif %}
-                    {% endfor %}
-                </div>
-                <h4 class="fw-bold mb-3">{{ project.title }}</h4>
-                <p class="text-muted small mb-4 line-clamp-3">{{ project.summary }}</p>
-                <div class="mt-auto">
-                    <a href="{% url 'project_detail' project.slug %}" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Analyze Project</a>
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                        {% for tool in project.tools_used.split %}
+                            {% if forloop.counter <= 3 %}
+                            <span class="small text-muted border border-white border-opacity-10 px-2 py-1 rounded-3 bg-white bg-opacity-5">{{ tool|cut:"," }}</span>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <h4 class="fw-bold mb-3 text-white">{{ project.title }}</h4>
+                    <p class="text-muted small mb-4 line-clamp-3">{{ project.summary }}</p>
+                    <div class="mt-auto pt-3">
+                        <a href="{% url 'project_detail' project.slug %}" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Analyze Case</a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -4,21 +4,39 @@
 {% block content %}
 <header class="hero-section">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7 animate__animated animate__fadeInLeft">
-                <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill fw-bold mb-3">Available for New Roles</span>
-                <h1 class="display-3 fw-800 mb-4" style="font-weight: 800;">Turning Chaos Into <span class="text-primary">Structured Value.</span></h1>
-                <p class="lead text-muted mb-5 fs-4">MSIS Student at Baylor University specializing in Business Analysis and Data Storytelling.</p>
+        <div class="row align-items-center g-5">
+            <div class="col-lg-7 animate__animated animate__fadeIn">
+                <div class="d-inline-flex align-items-center bg-white bg-opacity-10 border border-white border-opacity-10 rounded-pill px-3 py-2 mb-4">
+                    <span class="badge bg-primary rounded-circle p-1 me-2"><i class="bi bi-lightning-fill"></i></span>
+                    <span class="small fw-bold text-white">Open for Opportunities 2026</span>
+                </div>
+                <h1 class="display-2 fw-800 mb-4" style="line-height: 1.1;">
+                    Architecting <span class="text-gradient">Data.</span><br>
+                    Empowering <span class="text-white">People.</span>
+                </h1>
+                <p class="lead text-muted mb-5 fs-4" style="max-width: 600px;">
+                    MSIS @ Baylor. I transform messy information into <span class="text-white fw-bold">strategic business value</span> through analysis and automation.
+                </p>
                 <div class="d-flex gap-3">
-                    <a href="{% url 'projects' %}" class="btn btn-primary btn-lg shadow">View Projects</a>
-                    <a href="{% url 'contact' %}" class="btn btn-outline-primary btn-lg">Get in Touch</a>
+                    <a href="{% url 'projects' %}" class="btn btn-primary px-5 shadow-lg">View My Work</a>
+                    <a href="{% url 'contact' %}" class="btn btn-outline-primary px-5">Get in Touch</a>
                 </div>
             </div>
-            <div class="col-lg-5 d-none d-lg-block animate__animated animate__fadeInRight">
+            <div class="col-lg-5 animate__animated animate__zoomIn">
                 <div class="position-relative">
-                    <div class="bg-primary rounded-4 rotate-3 position-absolute w-100 h-100 opacity-10"></div>
-                    <div class="bg-white p-3 rounded-4 shadow-lg position-relative border">
-                        <img src="{% static 'portfolio/images/profile.png' %}" alt="Olena Makarova" class="img-fluid rounded-3 shadow-sm" style="width: 100%; height: 400px; object-fit: cover; object-position: center top;">
+                    <!-- Decorative elements -->
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-20 blur-3xl rounded-circle" style="filter: blur(80px);"></div>
+                    <div class="card p-2 rounded-5 overflow-hidden border-opacity-25" style="transform: rotate(-2deg);">
+                        <img src="{% static 'portfolio/images/profile.png' %}" alt="Olena Makarova" class="img-fluid rounded-5" style="filter: grayscale(20%) contrast(110%);">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-to-t from-dark to-transparent">
+                            <div class="glass-icon rounded-4 p-3 d-flex align-items-center">
+                                <i class="bi bi-graph-up-arrow text-primary fs-3 me-3"></i>
+                                <div>
+                                    <h6 class="mb-0 text-white fw-bold">Business Analyst</h6>
+                                    <span class="small text-muted">MSIS Baylor '26</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -26,62 +44,60 @@
     </div>
 </header>
 
-<section class="section-padding py-5">
+<section class="py-5">
     <div class="container">
         <div class="row g-4">
-            <div class="col-md-4 animate__animated animate__fadeInUp">
-                <div class="card p-4 h-100 border-0 shadow-sm" style="background: linear-gradient(145deg, #ffffff 0%, #f1f5f9 100%);">
-                    <div class="bg-primary text-white rounded-4 p-3 d-inline-block mb-4 shadow-sm" style="width: fit-content;">
-                        <i class="bi bi-graph-up-arrow fs-3"></i>
+            <div class="col-md-4">
+                <div class="card p-5 h-100">
+                    <div class="glass-icon rounded-4 p-3 d-inline-block mb-4">
+                        <i class="bi bi-cpu text-primary fs-1"></i>
                     </div>
-                    <h4 class="fw-bold">Analytical Mindset</h4>
-                    <p class="text-muted">Transforming raw data into meaningful human stories and actionable business insights.</p>
+                    <h3 class="fw-bold mb-3 text-white">Automation</h3>
+                    <p class="text-muted mb-0">Streamlining complex workflows with Python, SQL, and low-code orchestrators to save time and reduce errors.</p>
                 </div>
             </div>
-            <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
-                <div class="card p-4 h-100 border-0 shadow-sm" style="background: linear-gradient(145deg, #ffffff 0%, #fffbeb 100%);">
-                    <div class="bg-warning text-dark rounded-4 p-3 d-inline-block mb-4 shadow-sm" style="width: fit-content;">
-                        <i class="bi bi-code-slash fs-3"></i>
+            <div class="col-md-4">
+                <div class="card p-5 h-100">
+                    <div class="glass-icon rounded-4 p-3 d-inline-block mb-4">
+                        <i class="bi bi-database-check text-secondary fs-1"></i>
                     </div>
-                    <h4 class="fw-bold">Technical Depth</h4>
-                    <p class="text-muted">Fluent in Python, SQL, and Tableau to organize messy information into useful structures.</p>
+                    <h3 class="fw-bold mb-3 text-white">Data Strategy</h3>
+                    <p class="text-muted mb-0">Designing clean, structured data models that tell a human story and drive better decision making.</p>
                 </div>
             </div>
-            <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
-                <div class="card p-4 h-100 border-0 shadow-sm" style="background: linear-gradient(145deg, #ffffff 0%, #f0fdf4 100%);">
-                    <div class="bg-success text-white rounded-4 p-3 d-inline-block mb-4 shadow-sm" style="width: fit-content;">
-                        <i class="bi bi-people fs-3"></i>
+            <div class="col-md-4">
+                <div class="card p-5 h-100">
+                    <div class="glass-icon rounded-4 p-3 d-inline-block mb-4">
+                        <i class="bi bi-stars text-warning fs-1"></i>
                     </div>
-                    <h4 class="fw-bold">Collaborative</h4>
-                    <p class="text-muted">Experience working across HR, finance, and technical teams to optimize workflows.</p>
+                    <h3 class="fw-bold mb-3 text-white">AI Innovation</h3>
+                    <p class="text-muted mb-0">Building intelligent agents and custom knowledge bases to bring the power of LLMs to business processes.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="py-5 bg-white border-top border-bottom">
+<section class="py-5">
     <div class="container">
-        <div class="d-flex justify-content-between align-items-end mb-5">
-            <div>
-                <h2 class="section-title">Featured Work</h2>
-                <p class="text-muted lead">Impactful case studies across business and AI domains.</p>
-            </div>
-            <a href="{% url 'projects' %}" class="btn btn-link text-primary fw-bold text-decoration-none d-none d-md-block">Explore All <i class="bi bi-arrow-right"></i></a>
+        <div class="d-flex justify-content-between align-items-center mb-5">
+            <h2 class="section-title mb-0">Featured <span class="text-gradient">Projects</span></h2>
+            <a href="{% url 'projects' %}" class="btn btn-link text-white fw-bold text-decoration-none">All Projects <i class="bi bi-arrow-right"></i></a>
         </div>
         <div class="row g-4">
             {% for project in featured_projects %}
             <div class="col-md-4">
-                <div class="card h-100 border-0 p-4" style="background: #f8fafc; border: 1px solid rgba(0,0,0,0.03) !important;">
-                    <div class="d-flex justify-content-between align-items-start mb-4">
-                        <div class="bg-white rounded-3 shadow-sm p-3 border">
-                            <i class="bi {{ project.icon_class }} fs-2 text-primary"></i>
+                <div class="card h-100 overflow-hidden group">
+                    <div class="p-5">
+                        <div class="d-flex justify-content-between align-items-start mb-4">
+                            <div class="glass-icon rounded-4 p-3 border-opacity-10">
+                                <i class="bi {{ project.icon_class }} fs-2 text-primary"></i>
+                            </div>
                         </div>
-                        <span class="badge bg-white text-dark border shadow-sm">Case Study</span>
+                        <h4 class="fw-bold mb-3 text-white">{{ project.title }}</h4>
+                        <p class="text-muted small mb-4">{{ project.summary|truncatewords:15 }}</p>
+                        <a href="{% url 'project_detail' project.slug %}" class="btn btn-outline-primary btn-sm rounded-pill px-4">Case Study</a>
                     </div>
-                    <h5 class="fw-bold mb-2">{{ project.title }}</h5>
-                    <p class="text-muted small mb-4">{{ project.summary|truncatewords:20 }}</p>
-                    <a href="{% url 'project_detail' project.slug %}" class="text-primary fw-bold text-decoration-none mt-auto">View Breakdown <i class="bi bi-arrow-right-short"></i></a>
                 </div>
             </div>
             {% endfor %}
