@@ -148,15 +148,15 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "static_image_2": "portfolio/video/emailJack.png"
         },
         {
-            "title": "LangChain Agent Project",
-            "summary": "A sophisticated AI agent capable of multi-step reasoning and tool usage.",
-            "business_problem": "Users needed a way to query structured databases using natural language.",
+            "title": "LangChain (HandyMan) Project",
+            "summary": "A sophisticated AI agent capable of multi-step reasoning and tool usage for service automation.",
+            "business_problem": "Users needed a way to query structured databases and automate service coordination using natural language.",
             "tools_used": "Python, LangChain, SQLite, Streamlit",
-            "key_features": "SQL agent for database queries, memory retention, document retrieval.",
-            "role": "AI Engineer - implemented the LangChain reasoning engine.",
-            "biggest_challenge": "Ensuring the agent didn't hallucinate SQL queries for complex joins.",
-            "what_you_learned": "Mastered chain-of-thought prompting and vector store integration.",
-            "github_link": "https://github.com/lenatao15/langchain-agent",
+            "key_features": "SQL agent for database queries, service listings, user reviews, and booking management.",
+            "role": "AI Engineer & Lead Developer - implemented the LangChain reasoning engine and architected the service flow.",
+            "biggest_challenge": "Implementing a real-time availability calendar while ensuring the agent didn't hallucinate SQL queries.",
+            "what_you_learned": "Mastered chain-of-thought prompting and improved proficiency in complex relational database design.",
+            "github_link": "https://github.com/lenatao15/Handyman",
             "icon_class": "bi-robot"
         },
         {
@@ -195,18 +195,6 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "what_you_learned": "Deepened knowledge of Django's ORM and template inheritance.",
             "github_link": "https://github.com/lenatao15/campus_skillswamp",
             "icon_class": "bi-people-fill"
-        },
-        {
-            "title": "Handyman Project",
-            "summary": "A project focused on connecting homeowners with reliable repair services.",
-            "business_problem": "Homeowners struggled to find verified and available handyman services in their local area.",
-            "tools_used": "Python, Django, Bootstrap, SQLite",
-            "key_features": "Service listings, user reviews, booking management.",
-            "role": "Lead Developer - architected the database and service flow.",
-            "biggest_challenge": "Implementing a real-time availability calendar for diverse services.",
-            "what_you_learned": "Improved proficiency in complex relational database design and user experience optimization.",
-            "github_link": "https://github.com/lenatao15/Handyman",
-            "icon_class": "bi-tools"
         }
     ]
 

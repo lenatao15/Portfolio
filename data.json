@@ -40,7 +40,7 @@
 },
 {
   "model": "portfolio.profile",
-  "pk": 10,
+  "pk": 11,
   "fields": {
     "name": "Olena Makarova",
     "about_me": "I’m a Master of Science in Information Systems student at Baylor University with a concentration in Business Analysis (GPA: 4.0). \n\nMy background is a mix of sociology and technology, which means I don’t just look at data — I try to understand the human story behind it. I enjoy organizing messy information, finding patterns, and turning chaos into something structured and useful.\n\nI’ve worked in both administrative and data-focused roles, where I developed strong attention to detail, problem-solving skills, and the ability to work across teams. I’m especially interested in roles where I can combine analytical thinking with real-world impact.",
@@ -52,7 +52,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 208,
+  "pk": 231,
   "fields": {
     "name": "Data Analysis & Data Cleaning",
     "category": "technical",
@@ -61,7 +61,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 209,
+  "pk": 232,
   "fields": {
     "name": "SQL",
     "category": "technical",
@@ -70,7 +70,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 210,
+  "pk": 233,
   "fields": {
     "name": "Python",
     "category": "technical",
@@ -79,7 +79,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 211,
+  "pk": 234,
   "fields": {
     "name": "Tableau",
     "category": "technical",
@@ -88,7 +88,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 212,
+  "pk": 235,
   "fields": {
     "name": "Microsoft Excel",
     "category": "technical",
@@ -97,7 +97,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 213,
+  "pk": 236,
   "fields": {
     "name": "Lucidchart",
     "category": "technical",
@@ -106,7 +106,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 214,
+  "pk": 237,
   "fields": {
     "name": "Visio",
     "category": "technical",
@@ -115,7 +115,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 215,
+  "pk": 238,
   "fields": {
     "name": "Data Modeling",
     "category": "technical",
@@ -124,7 +124,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 216,
+  "pk": 239,
   "fields": {
     "name": "Basic Video Editing",
     "category": "technical",
@@ -133,7 +133,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 217,
+  "pk": 240,
   "fields": {
     "name": "Trend Analysis",
     "category": "analytical",
@@ -142,7 +142,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 218,
+  "pk": 241,
   "fields": {
     "name": "Data Interpretation",
     "category": "analytical",
@@ -151,7 +151,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 219,
+  "pk": 242,
   "fields": {
     "name": "Problem Solving",
     "category": "analytical",
@@ -160,7 +160,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 220,
+  "pk": 243,
   "fields": {
     "name": "Workflow Optimization",
     "category": "analytical",
@@ -169,7 +169,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 221,
+  "pk": 244,
   "fields": {
     "name": "Communication",
     "category": "soft",
@@ -178,7 +178,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 222,
+  "pk": 245,
   "fields": {
     "name": "Cross-functional Collaboration",
     "category": "soft",
@@ -187,7 +187,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 223,
+  "pk": 246,
   "fields": {
     "name": "Attention to Detail",
     "category": "soft",
@@ -196,7 +196,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 224,
+  "pk": 247,
   "fields": {
     "name": "Organization",
     "category": "soft",
@@ -205,7 +205,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 225,
+  "pk": 248,
   "fields": {
     "name": "Adaptability",
     "category": "soft",
@@ -214,7 +214,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 226,
+  "pk": 249,
   "fields": {
     "name": "Ukrainian",
     "category": "language",
@@ -223,7 +223,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 227,
+  "pk": 250,
   "fields": {
     "name": "Russian",
     "category": "language",
@@ -232,7 +232,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 228,
+  "pk": 251,
   "fields": {
     "name": "English",
     "category": "language",
@@ -241,7 +241,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 229,
+  "pk": 252,
   "fields": {
     "name": "Chinese",
     "category": "language",
@@ -250,7 +250,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 230,
+  "pk": 253,
   "fields": {
     "name": "Japanese",
     "category": "language",
@@ -259,7 +259,7 @@
 },
 {
   "model": "portfolio.experience",
-  "pk": 19,
+  "pk": 21,
   "fields": {
     "job_title": "Property Records Analyst",
     "company": "Total Tax Certificate",
@@ -271,7 +271,7 @@
 },
 {
   "model": "portfolio.experience",
-  "pk": 20,
+  "pk": 22,
   "fields": {
     "job_title": "Project Administrator",
     "company": "Stantec",
@@ -283,7 +283,7 @@
 },
 {
   "model": "portfolio.education",
-  "pk": 19,
+  "pk": 21,
   "fields": {
     "institution": "Baylor University",
     "location": "Waco, TX",
@@ -295,7 +295,7 @@
 },
 {
   "model": "portfolio.education",
-  "pk": 20,
+  "pk": 22,
   "fields": {
     "institution": "Kyiv National University of Culture and Arts",
     "location": "Kyiv, Ukraine",
@@ -307,7 +307,7 @@
 },
 {
   "model": "portfolio.certification",
-  "pk": 13,
+  "pk": 17,
   "fields": {
     "name": "IBM Build an AI Agent Certificate",
     "description": "Mastered the architecture and deployment of intelligent AI agents. This certification from IBM focuses on designing multi-step agentic workflows, prompt engineering, and integrating AI models into practical business applications to enhance decision-making and productivity.",
@@ -316,7 +316,7 @@
 },
 {
   "model": "portfolio.certification",
-  "pk": 14,
+  "pk": 18,
   "fields": {
     "name": "IBM Enterprise Design Thinking Certificate",
     "description": "Developed a deep understanding of human-centered design principles within a large-scale corporate environment. Learned how to facilitate collaborative problem-solving, identify user needs through empathy mapping, and iterate on solutions that align business goals with user experience.",
@@ -325,7 +325,7 @@
 },
 {
   "model": "portfolio.certification",
-  "pk": 15,
+  "pk": 19,
   "fields": {
     "name": "IBM Risk Management Certificate",
     "description": "Explored the methodologies and frameworks used to identify, assess, and mitigate risks in a business context. The course covered quantitative and qualitative risk analysis, strategy formulation, and the implementation of controls to protect organizational assets and ensure business continuity.",
@@ -334,7 +334,7 @@
 },
 {
   "model": "portfolio.certification",
-  "pk": 16,
+  "pk": 20,
   "fields": {
     "name": "HRCI Human Resource Associate Specialization Certificate",
     "description": "Gained foundational knowledge in human resource management, including recruitment, employee relations, and compliance. This specialized certificate from HRCI validates expertise in the core functions of HR and the legal frameworks governing the workplace.",
@@ -343,7 +343,7 @@
 },
 {
   "model": "portfolio.project",
-  "pk": 61,
+  "pk": 68,
   "fields": {
     "title": "Chatbot Project",
     "summary": "An intelligent conversational agent created using Chatbase to improve customer support responsiveness.",
@@ -365,7 +365,7 @@
 },
 {
   "model": "portfolio.project",
-  "pk": 62,
+  "pk": 69,
   "fields": {
     "title": "n8n Agent Workflow Project",
     "summary": "Automated business processes using low-code workflow automation.",
@@ -387,29 +387,29 @@
 },
 {
   "model": "portfolio.project",
-  "pk": 63,
+  "pk": 70,
   "fields": {
-    "title": "LangChain Agent Project",
-    "summary": "A sophisticated AI agent capable of multi-step reasoning and tool usage.",
-    "business_problem": "Users needed a way to query structured databases using natural language.",
+    "title": "LangChain (HandyMan) Project",
+    "summary": "A sophisticated AI agent capable of multi-step reasoning and tool usage for service automation.",
+    "business_problem": "Users needed a way to query structured databases and automate service coordination using natural language.",
     "tools_used": "Python, LangChain, SQLite, Streamlit",
-    "key_features": "SQL agent for database queries, memory retention, document retrieval.",
-    "role": "AI Engineer - implemented the LangChain reasoning engine.",
-    "biggest_challenge": "Ensuring the agent didn't hallucinate SQL queries for complex joins.",
-    "what_you_learned": "Mastered chain-of-thought prompting and vector store integration.",
+    "key_features": "SQL agent for database queries, service listings, user reviews, and booking management.",
+    "role": "AI Engineer & Lead Developer - implemented the LangChain reasoning engine and architected the service flow.",
+    "biggest_challenge": "Implementing a real-time availability calendar while ensuring the agent didn't hallucinate SQL queries.",
+    "what_you_learned": "Mastered chain-of-thought prompting and improved proficiency in complex relational database design.",
     "image": "",
     "icon_class": "bi-robot",
     "video_static_path": null,
     "static_image_1": null,
     "static_image_2": null,
-    "github_link": "https://github.com/lenatao15/langchain-agent",
+    "github_link": "https://github.com/lenatao15/Handyman",
     "demo_link": "",
-    "slug": "langchain-agent-project"
+    "slug": "langchain-handyman-project"
   }
 },
 {
   "model": "portfolio.project",
-  "pk": 64,
+  "pk": 71,
   "fields": {
     "title": "Google AI Studio Media Project",
     "summary": "Leveraging Gemini models for automated media analysis and content generation.",
@@ -431,7 +431,7 @@
 },
 {
   "model": "portfolio.project",
-  "pk": 65,
+  "pk": 72,
   "fields": {
     "title": "Machine Learning Project (LearningLog)",
     "summary": "Predictive model for identifying patterns in sociology-tech data.",
@@ -453,7 +453,7 @@
 },
 {
   "model": "portfolio.project",
-  "pk": 66,
+  "pk": 73,
   "fields": {
     "title": "Campus SkillSwap Django Project",
     "summary": "A community-driven platform for students to exchange skills and knowledge.",
@@ -471,28 +471,6 @@
     "github_link": "https://github.com/lenatao15/campus_skillswamp",
     "demo_link": "",
     "slug": "campus-skillswap-django-project"
-  }
-},
-{
-  "model": "portfolio.project",
-  "pk": 67,
-  "fields": {
-    "title": "Handyman Project",
-    "summary": "A project focused on connecting homeowners with reliable repair services.",
-    "business_problem": "Homeowners struggled to find verified and available handyman services in their local area.",
-    "tools_used": "Python, Django, Bootstrap, SQLite",
-    "key_features": "Service listings, user reviews, booking management.",
-    "role": "Lead Developer - architected the database and service flow.",
-    "biggest_challenge": "Implementing a real-time availability calendar for diverse services.",
-    "what_you_learned": "Improved proficiency in complex relational database design and user experience optimization.",
-    "image": "",
-    "icon_class": "bi-tools",
-    "video_static_path": null,
-    "static_image_1": null,
-    "static_image_2": null,
-    "github_link": "https://github.com/lenatao15/Handyman",
-    "demo_link": "",
-    "slug": "handyman-project"
   }
 }
 ]
