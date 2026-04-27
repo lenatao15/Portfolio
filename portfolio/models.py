@@ -69,6 +69,8 @@ class Project(models.Model):
     video_static_path = models.CharField(max_length=255, blank=True, null=True)
     static_image_1 = models.CharField(max_length=255, blank=True, null=True) # New field
     static_image_2 = models.CharField(max_length=255, blank=True, null=True) # New field
+    static_image_3 = models.CharField(max_length=255, blank=True, null=True) # New field
+    static_image_4 = models.CharField(max_length=255, blank=True, null=True) # New field
     github_link = models.URLField(blank=True)
     demo_link = models.URLField(blank=True)
     slug = models.SlugField(unique=True, blank=True)

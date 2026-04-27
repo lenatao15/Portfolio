@@ -51,21 +51,33 @@
                         </div>
                     {% endif %}
 
-                    {% if project.static_image_1 or project.static_image_2 %}
+                    {% if project.static_image_1 or project.static_image_2 or project.static_image_3 or project.static_image_4 %}
                         <div class="row g-4 mb-4">
                             {% if project.static_image_1 %}
-                            <div class="col-md-{% if project.static_image_2 %}6{% else %}12{% endif %}">
+                            <div class="col-md-6">
                                 <div class="card border-0 shadow-sm overflow-hidden h-100">
-                                    <img src="{% static project.static_image_1 %}" alt="Project Workflow" class="img-fluid w-100 h-100 object-fit-contain bg-light p-2">
-                                    <div class="card-footer bg-white small text-muted text-center border-0">Workflow Logic</div>
+                                    <img src="{% static project.static_image_1 %}" alt="Project Image 1" class="img-fluid w-100 h-100 object-fit-contain bg-light p-2">
                                 </div>
                             </div>
                             {% endif %}
                             {% if project.static_image_2 %}
                             <div class="col-md-6">
                                 <div class="card border-0 shadow-sm overflow-hidden h-100">
-                                    <img src="{% static project.static_image_2 %}" alt="Client Deliverable" class="img-fluid w-100 h-100 object-fit-contain bg-light p-2">
-                                    <div class="card-footer bg-white small text-muted text-center border-0">Client Output</div>
+                                    <img src="{% static project.static_image_2 %}" alt="Project Image 2" class="img-fluid w-100 h-100 object-fit-contain bg-light p-2">
+                                </div>
+                            </div>
+                            {% endif %}
+                            {% if project.static_image_3 %}
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm overflow-hidden h-100">
+                                    <img src="{% static project.static_image_3 %}" alt="Project Image 3" class="img-fluid w-100 h-100 object-fit-contain bg-light p-2">
+                                </div>
+                            </div>
+                            {% endif %}
+                            {% if project.static_image_4 %}
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm overflow-hidden h-100">
+                                    <img src="{% static project.static_image_4 %}" alt="Project Image 4" class="img-fluid w-100 h-100 object-fit-contain bg-light p-2">
                                 </div>
                             </div>
                             {% endif %}

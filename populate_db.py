@@ -185,16 +185,20 @@ I’ve worked in both administrative and data-focused roles, where I developed s
             "icon_class": "bi-graph-up-arrow"
         },
         {
-            "title": "Campus SkillSwap Django Project",
-            "summary": "A community-driven platform for students to exchange skills and knowledge.",
-            "business_problem": "Students lacked a central hub to find peers for collaborative learning.",
-            "tools_used": "Django, Bootstrap, SQLite",
-            "key_features": "User profiles, skill matching algorithm, messaging system.",
-            "role": "Full Stack Developer - built both the database schema and the frontend.",
-            "biggest_challenge": "Implementing an efficient search and filtering system for skills.",
-            "what_you_learned": "Deepened knowledge of Django's ORM and template inheritance.",
+            "title": "SkillSwamp",
+            "summary": "Where students trade talents and grow together! 🐸✨",
+            "business_problem": "Let's be real: college is expensive, but we're all experts at something! SkillSwamp was born from the idea that a student who's a pro at Python should be able to 'trade' that knowledge for some guitar lessons or help with a marketing project. No money, just pure talent exchange.",
+            "tools_used": "Django, Python, Bootstrap, SQLite",
+            "key_features": "- Personalized Profile: Show off what you know and what you want to learn.\n- Skill Matching: Our algorithm finds the perfect swap partner for you.\n- Direct Messaging: Chat with your future mentor or student right on the platform.\n- Community Feed: See what the swamp is buzzing about!",
+            "role": "I built this from the ground up! From the initial 'what if' to the final 'it works!', I handled the backend logic, the database design, and made sure the UI felt friendly and welcoming.",
+            "biggest_challenge": "Building a fair exchange system. How do you measure a 'unit' of skill? We decided to keep it informal and trust-based, which actually made the community much tighter!",
+            "what_you_learned": "Community-driven tech is the best tech. I learned a ton about user experience and how to build features that people actually want to use every day.",
             "github_link": "https://github.com/lenatao15/campus_skillswamp",
-            "icon_class": "bi-people-fill"
+            "icon_class": "bi-people-fill",
+            "static_image_1": "portfolio/images/projects/skillswamp1.PNG",
+            "static_image_2": "portfolio/images/projects/skillswamp2.PNG",
+            "static_image_3": "portfolio/images/projects/skillswamp3.PNG",
+            "static_image_4": "portfolio/images/projects/skillswamp4.PNG"
         }
     ]
 
