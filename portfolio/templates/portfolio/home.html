@@ -2,40 +2,31 @@
 {% load static %}
 
 {% block content %}
-<header class="hero-section">
+<header class="hero-section py-5 mt-5">
     <div class="container">
         <div class="row align-items-center g-5">
-            <div class="col-lg-7 animate__animated animate__fadeIn">
-                <div class="d-inline-flex align-items-center bg-white bg-opacity-10 border border-white border-opacity-10 rounded-pill px-3 py-2 mb-4">
-                    <span class="badge bg-primary rounded-circle p-1 me-2"><i class="bi bi-lightning-fill"></i></span>
-                    <span class="small fw-bold text-white">Open for Opportunities 2026</span>
+            <div class="col-lg-7">
+                <div class="d-inline-block bg-accent px-3 py-1 border border-2 border-dark fw-bold mb-4 shadow-sm" style="background: var(--accent);">
+                    Available for 2026 Roles
                 </div>
-                <h1 class="display-2 fw-800 mb-4" style="line-height: 1.1;">
-                    Architecting <span class="text-gradient">Data.</span><br>
-                    Empowering <span class="text-white">People.</span>
+                <h1 class="display-2 mb-4" style="color: #000 !important; font-weight: 900 !important;">
+                    Turning <span style="color: #4f46e5 !important; text-decoration: underline;">Chaos</span> Into Structured <span class="px-3" style="background: #f59e0b !important; border: 4px solid #000 !important; display: inline-block; transform: rotate(2deg);">Value.</span>
                 </h1>
-                <p class="lead text-muted mb-5 fs-4" style="max-width: 600px;">
-                    MSIS @ Baylor. I transform messy information into <span class="text-white fw-bold">strategic business value</span> through analysis and automation.
+                <p class="lead text-dark mb-5 fs-4 fw-bold">
+                    MSIS Student at Baylor University. I specialize in Business Analysis and Data Storytelling.
                 </p>
-                <div class="d-flex gap-3">
-                    <a href="{% url 'projects' %}" class="btn btn-primary px-5 shadow-lg">View My Work</a>
-                    <a href="{% url 'contact' %}" class="btn btn-outline-primary px-5">Get in Touch</a>
+                <div class="d-flex gap-4">
+                    <a href="{% url 'projects' %}" class="btn btn-primary btn-lg">Explore Projects</a>
+                    <a href="{% url 'contact' %}" class="btn btn-outline-primary btn-lg">Get in Touch</a>
                 </div>
             </div>
-            <div class="col-lg-5 animate__animated animate__zoomIn">
+            <div class="col-lg-5">
                 <div class="position-relative">
-                    <!-- Decorative elements -->
-                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-20 blur-3xl rounded-circle" style="filter: blur(80px);"></div>
-                    <div class="card p-2 rounded-5 overflow-hidden border-opacity-25" style="transform: rotate(-2deg);">
-                        <img src="{% static 'portfolio/images/profile.png' %}" alt="Olena Makarova" class="img-fluid rounded-5" style="filter: grayscale(20%) contrast(110%);">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-to-t from-dark to-transparent">
-                            <div class="glass-icon rounded-4 p-3 d-flex align-items-center">
-                                <i class="bi bi-graph-up-arrow text-primary fs-3 me-3"></i>
-                                <div>
-                                    <h6 class="mb-0 text-white fw-bold">Business Analyst</h6>
-                                    <span class="small text-muted">MSIS Baylor '26</span>
-                                </div>
-                            </div>
+                    <div class="card p-0 overflow-hidden" style="box-shadow: 15px 15px 0px var(--primary);">
+                        <img src="{% static 'portfolio/images/profile.png' %}" alt="Olena Makarova" class="img-fluid" style="width: 100%; height: 500px; object-fit: cover;">
+                        <div class="p-3 bg-dark text-white border-top border-2 border-dark">
+                            <h5 class="mb-0 fw-900">OLENA MAKAROVA</h5>
+                            <span class="small fw-bold text-accent" style="color: var(--accent);">MSIS @ BAYLOR</span>
                         </div>
                     </div>
                 </div>
@@ -44,34 +35,28 @@
     </div>
 </header>
 
-<section class="py-5">
+<section class="py-5 bg-white border-top border-bottom border-2 border-dark">
     <div class="container">
-        <div class="row g-4">
+        <div class="row g-5">
             <div class="col-md-4">
-                <div class="card p-5 h-100">
-                    <div class="glass-icon rounded-4 p-3 d-inline-block mb-4">
-                        <i class="bi bi-cpu text-primary fs-1"></i>
-                    </div>
-                    <h3 class="fw-bold mb-3 text-white">Automation</h3>
-                    <p class="text-muted mb-0">Streamlining complex workflows with Python, SQL, and low-code orchestrators to save time and reduce errors.</p>
+                <div class="p-4 h-100 border border-2 border-dark" style="box-shadow: 6px 6px 0px var(--primary);">
+                    <i class="bi bi-graph-up-arrow display-5 mb-3 d-block"></i>
+                    <h3 class="mb-3">Analytical Mind</h3>
+                    <p class="mb-0">Transforming raw data into meaningful human stories and actionable business insights.</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card p-5 h-100">
-                    <div class="glass-icon rounded-4 p-3 d-inline-block mb-4">
-                        <i class="bi bi-database-check text-secondary fs-1"></i>
-                    </div>
-                    <h3 class="fw-bold mb-3 text-white">Data Strategy</h3>
-                    <p class="text-muted mb-0">Designing clean, structured data models that tell a human story and drive better decision making.</p>
+                <div class="p-4 h-100 border border-2 border-dark" style="box-shadow: 6px 6px 0px var(--accent);">
+                    <i class="bi bi-code-slash display-5 mb-3 d-block"></i>
+                    <h3 class="mb-3">Technical Depth</h3>
+                    <p class="mb-0">Fluent in Python, SQL, and Tableau to organize messy information into useful structures.</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card p-5 h-100">
-                    <div class="glass-icon rounded-4 p-3 d-inline-block mb-4">
-                        <i class="bi bi-stars text-warning fs-1"></i>
-                    </div>
-                    <h3 class="fw-bold mb-3 text-white">AI Innovation</h3>
-                    <p class="text-muted mb-0">Building intelligent agents and custom knowledge bases to bring the power of LLMs to business processes.</p>
+                <div class="p-4 h-100 border border-2 border-dark" style="box-shadow: 6px 6px 0px var(--secondary);">
+                    <i class="bi bi-people display-5 mb-3 d-block"></i>
+                    <h3 class="mb-3">Collaborative</h3>
+                    <p class="mb-0">Experience working across HR, finance, and technical teams to optimize workflows.</p>
                 </div>
             </div>
         </div>
@@ -80,24 +65,17 @@
 
 <section class="py-5">
     <div class="container">
-        <div class="d-flex justify-content-between align-items-center mb-5">
-            <h2 class="section-title mb-0">Featured <span class="text-gradient">Projects</span></h2>
-            <a href="{% url 'projects' %}" class="btn btn-link text-white fw-bold text-decoration-none">All Projects <i class="bi bi-arrow-right"></i></a>
-        </div>
-        <div class="row g-4">
+        <h2 class="section-title">Featured Work</h2>
+        <div class="row g-4 mt-2">
             {% for project in featured_projects %}
             <div class="col-md-4">
-                <div class="card h-100 overflow-hidden group">
-                    <div class="p-5">
-                        <div class="d-flex justify-content-between align-items-start mb-4">
-                            <div class="glass-icon rounded-4 p-3 border-opacity-10">
-                                <i class="bi {{ project.icon_class }} fs-2 text-primary"></i>
-                            </div>
-                        </div>
-                        <h4 class="fw-bold mb-3 text-white">{{ project.title }}</h4>
-                        <p class="text-muted small mb-4">{{ project.summary|truncatewords:15 }}</p>
-                        <a href="{% url 'project_detail' project.slug %}" class="btn btn-outline-primary btn-sm rounded-pill px-4">Case Study</a>
+                <div class="card h-100 p-4">
+                    <div class="mb-4">
+                        <i class="bi {{ project.icon_class }} display-4 text-primary"></i>
                     </div>
+                    <h4 class="mb-3">{{ project.title }}</h4>
+                    <p class="small mb-4 text-dark">{{ project.summary }}</p>
+                    <a href="{% url 'project_detail' project.slug %}" class="btn btn-outline-primary btn-sm w-100">View Breakdown</a>
                 </div>
             </div>
             {% endfor %}

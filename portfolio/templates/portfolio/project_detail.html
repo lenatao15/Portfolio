@@ -4,32 +4,26 @@
 {% block title %}{{ project.title }} | Olena Makarova{% endblock %}
 
 {% block content %}
-<article class="animate__animated animate__fadeIn">
+<article class="mt-5 pt-5">
     <!-- Project Hero Header -->
-    <section class="hero-section pb-5 mb-5 border-bottom border-white border-opacity-10">
+    <section class="py-5 border-bottom border-2 border-dark" style="background: white;">
         <div class="container">
-            <nav aria-label="breadcrumb" class="mb-5">
+            <nav aria-label="breadcrumb" class="mb-4">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'projects' %}" class="text-decoration-none text-muted">Projects</a></li>
-                <li class="breadcrumb-item active text-white" aria-current="page">{{ project.title }}</li>
+                <li class="breadcrumb-item"><a href="{% url 'projects' %}" class="text-decoration-none fw-bold text-primary">Projects</a></li>
+                <li class="breadcrumb-item active fw-bold text-dark" aria-current="page">{{ project.title }}</li>
               </ol>
             </nav>
             <div class="row align-items-center g-4">
                 <div class="col-lg-8">
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="glass-icon rounded-4 p-3 me-4">
-                            <i class="bi {{ project.icon_class }} text-primary display-5"></i>
-                        </div>
-                        <div>
-                            <h1 class="display-3 fw-800 text-white mb-2">{{ project.title }}</h1>
-                            <p class="lead text-primary fw-bold fs-4 mb-0">{{ project.summary }}</p>
-                        </div>
-                    </div>
+                    <div class="d-inline-block bg-primary text-white px-3 py-1 border border-2 border-dark fw-bold mb-3">Project Brief</div>
+                    <h1 class="display-3 mb-2">{{ project.title }}</h1>
+                    <p class="lead text-primary fw-bold fs-4 mb-0">{{ project.summary }}</p>
                 </div>
                 <div class="col-lg-4 text-lg-end">
                     <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
                         {% for tool in project.tools_used.split %}
-                            <span class="small text-muted border border-white border-opacity-10 px-3 py-2 rounded-pill bg-white bg-opacity-5 fw-bold">{{ tool|cut:"," }}</span>
+                            <span class="small fw-bold border border-2 border-dark px-3 py-2 bg-light shadow-sm">{{ tool|cut:"," }}</span>
                         {% endfor %}
                     </div>
                 </div>
@@ -37,14 +31,14 @@
         </div>
     </section>
 
-    <div class="container pb-5">
+    <div class="container py-5">
         <div class="row g-5">
             <div class="col-lg-8">
                 <!-- Visual / Video / Gallery -->
                 <div class="mb-5">
                     {% if project.video_static_path %}
-                        <div class="card p-2 mb-4 border-opacity-25 shadow-2xl">
-                            <div class="ratio ratio-16x9 rounded-4 overflow-hidden bg-black">
+                        <div class="card p-0 border-2 border-dark shadow-lg">
+                            <div class="ratio ratio-16x9 bg-black">
                                 <video controls class="w-100 h-100">
                                     <source src="{% static project.video_static_path %}" type="video/mp4">
                                     Your browser does not support the video tag.
@@ -54,83 +48,74 @@
                     {% endif %}
 
                     {% if project.static_image_1 or project.static_image_2 or project.static_image_3 or project.static_image_4 %}
-                        <div class="row g-4 mb-4">
+                        <div class="row g-4 mb-4 mt-2">
                             {% if project.static_image_1 %}
                             <div class="col-md-6">
-                                <div class="card p-2 overflow-hidden h-100 border-opacity-10">
-                                    <img src="{% static project.static_image_1 %}" alt="Project Image 1" class="img-fluid rounded-4 w-100 h-100 object-fit-contain bg-dark bg-opacity-50 p-2">
+                                <div class="card p-0 h-100 border-2 border-dark" style="box-shadow: 10px 10px 0px var(--primary);">
+                                    <img src="{% static project.static_image_1 %}" alt="Project Image 1" class="img-fluid w-100 h-100 object-fit-contain bg-light p-2">
                                 </div>
                             </div>
                             {% endif %}
                             {% if project.static_image_2 %}
                             <div class="col-md-6">
-                                <div class="card p-2 overflow-hidden h-100 border-opacity-10">
-                                    <img src="{% static project.static_image_2 %}" alt="Project Image 2" class="img-fluid rounded-4 w-100 h-100 object-fit-contain bg-dark bg-opacity-50 p-2">
+                                <div class="card p-0 h-100 border-2 border-dark" style="box-shadow: 10px 10px 0px var(--accent);">
+                                    <img src="{% static project.static_image_2 %}" alt="Project Image 2" class="img-fluid w-100 h-100 object-fit-contain bg-light p-2">
                                 </div>
                             </div>
                             {% endif %}
                             {% if project.static_image_3 %}
                             <div class="col-md-6">
-                                <div class="card p-2 overflow-hidden h-100 border-opacity-10">
-                                    <img src="{% static project.static_image_3 %}" alt="Project Image 3" class="img-fluid rounded-4 w-100 h-100 object-fit-contain bg-dark bg-opacity-50 p-2">
+                                <div class="card p-0 h-100 border-2 border-dark" style="box-shadow: 10px 10px 0px var(--primary);">
+                                    <img src="{% static project.static_image_3 %}" alt="Project Image 3" class="img-fluid w-100 h-100 object-fit-contain bg-light p-2">
                                 </div>
                             </div>
                             {% endif %}
                             {% if project.static_image_4 %}
                             <div class="col-md-6">
-                                <div class="card p-2 overflow-hidden h-100 border-opacity-10">
-                                    <img src="{% static project.static_image_4 %}" alt="Project Image 4" class="img-fluid rounded-4 w-100 h-100 object-fit-contain bg-dark bg-opacity-50 p-2">
+                                <div class="card p-0 h-100 border-2 border-dark" style="box-shadow: 10px 10px 0px var(--accent);">
+                                    <img src="{% static project.static_image_4 %}" alt="Project Image 4" class="img-fluid w-100 h-100 object-fit-contain bg-light p-2">
                                 </div>
                             </div>
                             {% endif %}
                         </div>
                     {% endif %}
-
-                    {% if not project.video_static_path and not project.static_image_1 and project.image %}
-                        <div class="card p-2 mb-4 border-opacity-10">
-                            <img src="{{ project.image.url }}" alt="{{ project.title }}" class="img-fluid rounded-4 w-100" style="max-height: 500px; object-fit: cover;">
-                        </div>
-                    {% endif %}
                 </div>
 
                 <!-- High-Impact Problem Statement -->
-                <div class="p-5 card border-opacity-25 mb-5 position-relative overflow-hidden">
-                    <div class="position-absolute top-0 end-0 p-4 opacity-10">
-                        <i class="bi bi-quote display-1 text-white"></i>
-                    </div>
-                    <h3 class="fw-800 text-white mb-4 d-flex align-items-center">
-                        <span class="glass-icon text-warning rounded-3 p-2 me-3 d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
-                            <i class="bi bi-lightbulb-fill fs-5"></i>
+                <div class="p-5 bg-white border border-3 border-dark mb-5 position-relative" style="box-shadow: 15px 15px 0px var(--accent);">
+                    <h3 class="mb-4 d-flex align-items-center">
+                        <span class="bg-primary text-white p-2 me-3 border border-2 border-dark">
+                            <i class="bi bi-lightbulb-fill"></i>
                         </span>
                         The Problem
                     </h3>
-                    <p class="lead mb-0 text-muted" style="font-size: 1.15rem; line-height: 1.8;">
+                    <p class="lead mb-0 text-dark fw-bold" style="line-height: 1.8;">
                         {{ project.business_problem }}
                     </p>
                 </div>
 
                 <!-- Strategic Features -->
-                <div class="mb-5 px-2">
-                    <h3 class="fw-800 text-white mb-4 d-flex align-items-center">
-                        <span class="glass-icon text-primary rounded-3 p-2 me-3 d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
-                            <i class="bi bi-cpu-fill fs-5"></i>
+                <div class="mb-5">
+                    <h3 class="mb-4 d-flex align-items-center">
+                        <span class="bg-dark text-white p-2 me-3 border border-2 border-dark">
+                            <i class="bi bi-cpu-fill"></i>
                         </span>
-                        Key Architecture
+                        Solution Architecture
                     </h3>
-                    <div class="text-muted fs-6" style="line-height: 1.8;">
+                    <div class="text-dark fw-bold" style="line-height: 1.8;">
                         {{ project.key_features|linebreaks }}
                     </div>
                 </div>
 
                 <!-- Role -->
-                <div class="mb-5 px-2">
-                    <h3 class="fw-800 text-white mb-4 d-flex align-items-center">
-                        <span class="glass-icon text-secondary rounded-3 p-2 me-3 d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
-                            <i class="bi bi-person-check-fill fs-5"></i>
+                <div class="mb-5">
+                    <h3 class="mb-4 d-flex align-items-center">
+                        <span class="bg-accent text-dark p-2 me-3 border border-2 border-dark">
+                            <i class="bi bi-person-check-fill"></i>
                         </span>
                         My Contribution
                     </h3>
-                    <div class="text-muted fs-6" style="line-height: 1.8;">
+                    <div class="text-dark fw-bold" style="line-height: 1.8;">
                         {{ project.role|linebreaks }}
                     </div>
                 </div>
@@ -138,19 +123,19 @@
                 <!-- Insights Row -->
                 <div class="row g-4 mb-5">
                     <div class="col-md-6">
-                        <div class="card h-100 p-4 border-opacity-10 bg-black bg-opacity-20">
-                            <h5 class="fw-bold mb-3 d-flex align-items-center text-white">
-                                <i class="bi bi-shield-slash-fill text-danger me-2"></i> Challenge
+                        <div class="p-4 border border-2 border-dark bg-white" style="box-shadow: 8px 8px 0px #dc3545;">
+                            <h5 class="fw-bold mb-3 text-danger">
+                                <i class="bi bi-shield-slash-fill me-2"></i> Challenge
                             </h5>
-                            <p class="small text-muted mb-0">{{ project.biggest_challenge }}</p>
+                            <p class="fw-bold text-dark mb-0">{{ project.biggest_challenge }}</p>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card h-100 p-4 border-opacity-10 bg-primary bg-opacity-10">
-                            <h5 class="fw-bold mb-3 d-flex align-items-center text-white">
-                                <i class="bi bi-journal-check text-primary me-2"></i> Takeaway
+                        <div class="p-4 border border-2 border-dark bg-white" style="box-shadow: 8px 8px 0px var(--primary);">
+                            <h5 class="fw-bold mb-3 text-primary">
+                                <i class="bi bi-journal-check me-2"></i> Key Takeaway
                             </h5>
-                            <p class="small text-muted mb-0">{{ project.what_you_learned }}</p>
+                            <p class="fw-bold text-dark mb-0">{{ project.what_you_learned }}</p>
                         </div>
                     </div>
                 </div>
@@ -158,34 +143,34 @@
 
             <div class="col-lg-4">
                 <div class="sticky-top" style="top: 100px;">
-                    <div class="card p-4 border-opacity-20 bg-white bg-opacity-5 mb-4">
-                        <h4 class="fw-800 text-white mb-4">Quick Links</h4>
+                    <div class="p-4 border border-3 border-dark bg-white shadow-lg mb-4">
+                        <h4 class="mb-4 fw-900">RESOURCES</h4>
                         {% if project.github_link %}
-                        <a href="{{ project.github_link }}" target="_blank" class="btn btn-outline-primary w-100 mb-3 d-flex align-items-center justify-content-center fw-bold">
+                        <a href="{{ project.github_link }}" target="_blank" class="btn btn-outline-primary w-100 mb-3 d-flex align-items-center justify-content-center">
                             <i class="bi bi-github me-2"></i> Repository
                         </a>
                         {% endif %}
                         {% if project.demo_link %}
-                        <a href="{{ project.demo_link }}" target="_blank" class="btn btn-primary w-100 d-flex align-items-center justify-content-center fw-bold shadow">
+                        <a href="{{ project.demo_link }}" target="_blank" class="btn btn-primary w-100 d-flex align-items-center justify-content-center shadow">
                             <i class="bi bi-rocket-takeoff-fill me-2"></i> Live Demo
                         </a>
                         {% endif %}
                     </div>
 
-                    <div class="card p-4 border-opacity-10">
-                        <h5 class="fw-bold mb-3 small text-uppercase letter-spacing-1 text-muted">Project Meta</h5>
-                        <ul class="list-unstyled mb-0 small">
-                            <li class="mb-3 d-flex justify-content-between">
+                    <div class="p-4 border border-2 border-dark bg-light shadow-sm">
+                        <h5 class="fw-bold mb-3 small text-uppercase">Project Metadata</h5>
+                        <ul class="list-unstyled mb-0 fw-bold">
+                            <li class="mb-3 d-flex justify-content-between border-bottom border-dark pb-2">
                                 <span class="text-muted">Domain</span>
-                                <span class="text-white fw-bold">Business Intel</span>
+                                <span>Business Intel</span>
                             </li>
-                            <li class="mb-3 d-flex justify-content-between">
+                            <li class="mb-3 d-flex justify-content-between border-bottom border-dark pb-2">
                                 <span class="text-muted">Year</span>
-                                <span class="text-white fw-bold">2026</span>
+                                <span>2026</span>
                             </li>
                             <li class="d-flex justify-content-between">
                                 <span class="text-muted">Type</span>
-                                <span class="fw-bold text-gradient">Technical Case</span>
+                                <span class="text-primary">Case Study</span>
                             </li>
                         </ul>
                     </div>
