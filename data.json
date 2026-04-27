@@ -40,7 +40,7 @@
 },
 {
   "model": "portfolio.profile",
-  "pk": 8,
+  "pk": 9,
   "fields": {
     "name": "Olena Makarova",
     "about_me": "I’m a Master of Science in Information Systems student at Baylor University with a concentration in Business Analysis (GPA: 4.0). \n\nMy background is a mix of sociology and technology, which means I don’t just look at data — I try to understand the human story behind it. I enjoy organizing messy information, finding patterns, and turning chaos into something structured and useful.\n\nI’ve worked in both administrative and data-focused roles, where I developed strong attention to detail, problem-solving skills, and the ability to work across teams. I’m especially interested in roles where I can combine analytical thinking with real-world impact.",
@@ -52,7 +52,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 162,
+  "pk": 185,
   "fields": {
     "name": "Data Analysis & Data Cleaning",
     "category": "technical",
@@ -61,7 +61,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 163,
+  "pk": 186,
   "fields": {
     "name": "SQL",
     "category": "technical",
@@ -70,7 +70,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 164,
+  "pk": 187,
   "fields": {
     "name": "Python",
     "category": "technical",
@@ -79,7 +79,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 165,
+  "pk": 188,
   "fields": {
     "name": "Tableau",
     "category": "technical",
@@ -88,7 +88,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 166,
+  "pk": 189,
   "fields": {
     "name": "Microsoft Excel",
     "category": "technical",
@@ -97,7 +97,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 167,
+  "pk": 190,
   "fields": {
     "name": "Lucidchart",
     "category": "technical",
@@ -106,7 +106,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 168,
+  "pk": 191,
   "fields": {
     "name": "Visio",
     "category": "technical",
@@ -115,7 +115,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 169,
+  "pk": 192,
   "fields": {
     "name": "Data Modeling",
     "category": "technical",
@@ -124,7 +124,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 170,
+  "pk": 193,
   "fields": {
     "name": "Basic Video Editing",
     "category": "technical",
@@ -133,7 +133,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 171,
+  "pk": 194,
   "fields": {
     "name": "Trend Analysis",
     "category": "analytical",
@@ -142,7 +142,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 172,
+  "pk": 195,
   "fields": {
     "name": "Data Interpretation",
     "category": "analytical",
@@ -151,7 +151,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 173,
+  "pk": 196,
   "fields": {
     "name": "Problem Solving",
     "category": "analytical",
@@ -160,7 +160,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 174,
+  "pk": 197,
   "fields": {
     "name": "Workflow Optimization",
     "category": "analytical",
@@ -169,7 +169,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 175,
+  "pk": 198,
   "fields": {
     "name": "Communication",
     "category": "soft",
@@ -178,7 +178,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 176,
+  "pk": 199,
   "fields": {
     "name": "Cross-functional Collaboration",
     "category": "soft",
@@ -187,7 +187,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 177,
+  "pk": 200,
   "fields": {
     "name": "Attention to Detail",
     "category": "soft",
@@ -196,7 +196,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 178,
+  "pk": 201,
   "fields": {
     "name": "Organization",
     "category": "soft",
@@ -205,7 +205,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 179,
+  "pk": 202,
   "fields": {
     "name": "Adaptability",
     "category": "soft",
@@ -214,7 +214,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 180,
+  "pk": 203,
   "fields": {
     "name": "Ukrainian",
     "category": "language",
@@ -223,7 +223,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 181,
+  "pk": 204,
   "fields": {
     "name": "Russian",
     "category": "language",
@@ -232,7 +232,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 182,
+  "pk": 205,
   "fields": {
     "name": "English",
     "category": "language",
@@ -241,7 +241,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 183,
+  "pk": 206,
   "fields": {
     "name": "Chinese",
     "category": "language",
@@ -250,7 +250,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 184,
+  "pk": 207,
   "fields": {
     "name": "Japanese",
     "category": "language",
@@ -259,7 +259,7 @@
 },
 {
   "model": "portfolio.experience",
-  "pk": 15,
+  "pk": 17,
   "fields": {
     "job_title": "Property Records Analyst",
     "company": "Total Tax Certificate",
@@ -271,7 +271,7 @@
 },
 {
   "model": "portfolio.experience",
-  "pk": 16,
+  "pk": 18,
   "fields": {
     "job_title": "Project Administrator",
     "company": "Stantec",
@@ -283,7 +283,7 @@
 },
 {
   "model": "portfolio.education",
-  "pk": 15,
+  "pk": 17,
   "fields": {
     "institution": "Baylor University",
     "location": "Waco, TX",
@@ -295,7 +295,7 @@
 },
 {
   "model": "portfolio.education",
-  "pk": 16,
+  "pk": 18,
   "fields": {
     "institution": "Kyiv National University of Culture and Arts",
     "location": "Kyiv, Ukraine",
@@ -307,14 +307,43 @@
 },
 {
   "model": "portfolio.certification",
-  "pk": 8,
+  "pk": 9,
   "fields": {
-    "name": "HRCI Human Resource Associate Specialization Certificate"
+    "name": "IBM Build an AI Agent Certificate",
+    "description": "Mastered the architecture and deployment of intelligent AI agents. This certification from IBM focuses on designing multi-step agentic workflows, prompt engineering, and integrating AI models into practical business applications to enhance decision-making and productivity.",
+    "static_image_path": "portfolio/images/certifications/BuildAnAIAgent.PNG"
+  }
+},
+{
+  "model": "portfolio.certification",
+  "pk": 10,
+  "fields": {
+    "name": "IBM Enterprise Design Thinking Certificate",
+    "description": "Developed a deep understanding of human-centered design principles within a large-scale corporate environment. Learned how to facilitate collaborative problem-solving, identify user needs through empathy mapping, and iterate on solutions that align business goals with user experience.",
+    "static_image_path": "portfolio/images/certifications/IBM_enterprice_design_thinking.PNG"
+  }
+},
+{
+  "model": "portfolio.certification",
+  "pk": 11,
+  "fields": {
+    "name": "IBM Risk Management Certificate",
+    "description": "Explored the methodologies and frameworks used to identify, assess, and mitigate risks in a business context. The course covered quantitative and qualitative risk analysis, strategy formulation, and the implementation of controls to protect organizational assets and ensure business continuity.",
+    "static_image_path": "portfolio/images/certifications/RiskManagement.PNG"
+  }
+},
+{
+  "model": "portfolio.certification",
+  "pk": 12,
+  "fields": {
+    "name": "HRCI Human Resource Associate Specialization Certificate",
+    "description": "Gained foundational knowledge in human resource management, including recruitment, employee relations, and compliance. This specialized certificate from HRCI validates expertise in the core functions of HR and the legal frameworks governing the workplace.",
+    "static_image_path": "portfolio/images/certifications/HRCI.PNG"
   }
 },
 {
   "model": "portfolio.project",
-  "pk": 47,
+  "pk": 54,
   "fields": {
     "title": "Chatbot Project",
     "summary": "An intelligent conversational agent designed to improve customer support responsiveness.",
@@ -336,7 +365,7 @@
 },
 {
   "model": "portfolio.project",
-  "pk": 48,
+  "pk": 55,
   "fields": {
     "title": "n8n Agent Workflow Project",
     "summary": "Automated business processes using low-code workflow automation.",
@@ -358,7 +387,7 @@
 },
 {
   "model": "portfolio.project",
-  "pk": 49,
+  "pk": 56,
   "fields": {
     "title": "LangChain Agent Project",
     "summary": "A sophisticated AI agent capable of multi-step reasoning and tool usage.",
@@ -380,7 +409,7 @@
 },
 {
   "model": "portfolio.project",
-  "pk": 50,
+  "pk": 57,
   "fields": {
     "title": "Google AI Studio Media Project",
     "summary": "Leveraging Gemini models for automated media analysis and content generation.",
@@ -402,7 +431,7 @@
 },
 {
   "model": "portfolio.project",
-  "pk": 51,
+  "pk": 58,
   "fields": {
     "title": "Machine Learning Project (LearningLog)",
     "summary": "Predictive model for identifying patterns in sociology-tech data.",
@@ -424,7 +453,7 @@
 },
 {
   "model": "portfolio.project",
-  "pk": 52,
+  "pk": 59,
   "fields": {
     "title": "Campus SkillSwap Django Project",
     "summary": "A community-driven platform for students to exchange skills and knowledge.",
@@ -446,7 +475,7 @@
 },
 {
   "model": "portfolio.project",
-  "pk": 53,
+  "pk": 60,
   "fields": {
     "title": "Handyman Project",
     "summary": "A project focused on connecting homeowners with reliable repair services.",

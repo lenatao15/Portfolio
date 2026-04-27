@@ -22,8 +22,6 @@ I’ve worked in both administrative and data-focused roles, where I developed s
         github="https://github.com/lenatao15/"
     )
 
-    # ... (skipping some lines for brevity in instruction, will apply actual replacement)
-
     # Skills
     Skill.objects.all().delete()
     skills = [
@@ -96,7 +94,26 @@ I’ve worked in both administrative and data-focused roles, where I developed s
 
     # Certifications
     Certification.objects.all().delete()
-    Certification.objects.create(name="HRCI Human Resource Associate Specialization Certificate")
+    Certification.objects.create(
+        name="IBM Build an AI Agent Certificate",
+        description="Mastered the architecture and deployment of intelligent AI agents. This certification from IBM focuses on designing multi-step agentic workflows, prompt engineering, and integrating AI models into practical business applications to enhance decision-making and productivity.",
+        static_image_path="portfolio/images/certifications/BuildAnAIAgent.PNG"
+    )
+    Certification.objects.create(
+        name="IBM Enterprise Design Thinking Certificate",
+        description="Developed a deep understanding of human-centered design principles within a large-scale corporate environment. Learned how to facilitate collaborative problem-solving, identify user needs through empathy mapping, and iterate on solutions that align business goals with user experience.",
+        static_image_path="portfolio/images/certifications/IBM_enterprice_design_thinking.PNG"
+    )
+    Certification.objects.create(
+        name="IBM Risk Management Certificate",
+        description="Explored the methodologies and frameworks used to identify, assess, and mitigate risks in a business context. The course covered quantitative and qualitative risk analysis, strategy formulation, and the implementation of controls to protect organizational assets and ensure business continuity.",
+        static_image_path="portfolio/images/certifications/RiskManagement.PNG"
+    )
+    Certification.objects.create(
+        name="HRCI Human Resource Associate Specialization Certificate",
+        description="Gained foundational knowledge in human resource management, including recruitment, employee relations, and compliance. This specialized certificate from HRCI validates expertise in the core functions of HR and the legal frameworks governing the workplace.",
+        static_image_path="portfolio/images/certifications/HRCI.PNG"
+    )
 
     # Projects
     Project.objects.all().delete()

@@ -49,6 +49,8 @@ class Education(models.Model):
 
 class Certification(models.Model):
     name = models.CharField(max_length=200)
+    description = models.TextField(blank=True) # New field
+    static_image_path = models.CharField(max_length=255, blank=True, null=True) # New field
     
     def __str__(self):
         return self.name
