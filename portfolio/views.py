@@ -30,6 +30,10 @@ def skills(request):
         'languages': languages
     })
 
+def certifications(request):
+    certifications_list = Certification.objects.all()
+    return render(request, 'portfolio/certifications.html', {'certifications_list': certifications_list})
+
 def resume(request):
     experiences = Experience.objects.all().order_by('-start_date')
     education = Education.objects.all().order_by('-graduation_date')

@@ -193,9 +193,10 @@
                     <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'projects' %}">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'certifications' %}">Certifications</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'skills' %}">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'resume' %}">Resume</a></li>
-                    <li class="nav-item ms-lg-3"><a class="btn btn-primary px-4 mt-2 mt-lg-0" href="{% url 'contact' %}">Hire Me</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-primary px-4 mt-2 mt-lg-0" href="{% url 'contact' %}">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -203,19 +204,43 @@
 
     {% block content %}{% endblock %}
 
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0 text-center">
+                    <img src="" id="lightboxImg" class="img-fluid border border-4 border-dark shadow-lg">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="container text-center">
             <div class="mb-4">
                 {% if profile.linkedin %}
-                    <a href="{{ profile.linkedin }}" target="_blank" class="text-dark me-3 fs-4"><i class="bi bi-linkedin"></i></a>
+                    <a href="{{ profile.linkedin }}" target="_blank" class="text-white me-3 fs-4"><i class="bi bi-linkedin"></i></a>
                 {% endif %}
                 {% if profile.github %}
-                    <a href="{{ profile.github }}" target="_blank" class="text-dark me-3 fs-4"><i class="bi bi-github"></i></a>
+                    <a href="{{ profile.github }}" target="_blank" class="text-white me-3 fs-4"><i class="bi bi-github"></i></a>
                 {% endif %}
             </div>
-            <p class="text-muted mb-0">&copy; 2026 Olena Makarova. MSIS @ Baylor University.</p>
+            <p class="text-white opacity-50 mb-0">&copy; 2026 Olena Makarova. MSIS @ Baylor University.</p>
         </div>
     </footer>
+
+    <!-- Lightbox Script -->
+    <script>
+        document.addEventListener('click', function (e) {
+            if (e.target.classList.contains('lightbox-trigger')) {
+                const src = e.target.getAttribute('src');
+                document.getElementById('lightboxImg').setAttribute('src', src);
+                const modal = new bootstrap.Modal(document.getElementById('lightboxModal'));
+                modal.show();
+            }
+        });
+    </script>
 
     <!-- Chatbase Chatbot -->
     <script>

@@ -51,29 +51,29 @@
                         <div class="row g-4 mb-4 mt-2">
                             {% if project.static_image_1 %}
                             <div class="col-md-6">
-                                <div class="card p-0 h-100 border-2 border-dark" style="box-shadow: 10px 10px 0px var(--primary);">
-                                    <img src="{% static project.static_image_1 %}" alt="Project Image 1" class="img-fluid w-100 h-100 object-fit-contain bg-light p-2">
+                                <div class="card p-0 h-100 border-2 border-dark shadow-sm overflow-hidden">
+                                    <img src="{% static project.static_image_1 %}" alt="Project Image 1" class="img-fluid w-100 h-100 object-fit-cover bg-light lightbox-trigger" style="cursor: pointer; min-height: 300px;">
                                 </div>
                             </div>
                             {% endif %}
                             {% if project.static_image_2 %}
                             <div class="col-md-6">
-                                <div class="card p-0 h-100 border-2 border-dark" style="box-shadow: 10px 10px 0px var(--accent);">
-                                    <img src="{% static project.static_image_2 %}" alt="Project Image 2" class="img-fluid w-100 h-100 object-fit-contain bg-light p-2">
+                                <div class="card p-0 h-100 border-2 border-dark shadow-sm overflow-hidden">
+                                    <img src="{% static project.static_image_2 %}" alt="Project Image 2" class="img-fluid w-100 h-100 object-fit-cover bg-light lightbox-trigger" style="cursor: pointer; min-height: 300px;">
                                 </div>
                             </div>
                             {% endif %}
                             {% if project.static_image_3 %}
                             <div class="col-md-6">
-                                <div class="card p-0 h-100 border-2 border-dark" style="box-shadow: 10px 10px 0px var(--primary);">
-                                    <img src="{% static project.static_image_3 %}" alt="Project Image 3" class="img-fluid w-100 h-100 object-fit-contain bg-light p-2">
+                                <div class="card p-0 h-100 border-2 border-dark shadow-sm overflow-hidden">
+                                    <img src="{% static project.static_image_3 %}" alt="Project Image 3" class="img-fluid w-100 h-100 object-fit-cover bg-light lightbox-trigger" style="cursor: pointer; min-height: 300px;">
                                 </div>
                             </div>
                             {% endif %}
                             {% if project.static_image_4 %}
                             <div class="col-md-6">
-                                <div class="card p-0 h-100 border-2 border-dark" style="box-shadow: 10px 10px 0px var(--accent);">
-                                    <img src="{% static project.static_image_4 %}" alt="Project Image 4" class="img-fluid w-100 h-100 object-fit-contain bg-light p-2">
+                                <div class="card p-0 h-100 border-2 border-dark shadow-sm overflow-hidden">
+                                    <img src="{% static project.static_image_4 %}" alt="Project Image 4" class="img-fluid w-100 h-100 object-fit-cover bg-light lightbox-trigger" style="cursor: pointer; min-height: 300px;">
                                 </div>
                             </div>
                             {% endif %}

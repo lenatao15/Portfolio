@@ -4,14 +4,16 @@
 {% block title %}Resume | Olena Makarova{% endblock %}
 
 {% block content %}
-<section class="hero-section pb-5 border-bottom mb-5">
+<section class="hero-section py-5">
     <div class="container d-flex justify-content-between align-items-end">
         <div>
-            <h1 class="display-4 fw-800 animate__animated animate__fadeInLeft">Career <span class="text-primary">Journey.</span></h1>
-            <p class="lead text-muted mb-0 animate__animated animate__fadeInUp">Detailed professional background and education.</p>
+            <div class="d-inline-block bg-accent px-4 py-1 border border-2 border-dark fw-bold mb-4 shadow-sm" style="background: var(--accent);">
+                Professional History
+            </div>
+            <h1 class="display-3 mb-0">Career <span style="background: var(--primary); color: white; padding: 0 15px; border: 3px solid black;">Journey.</span></h1>
         </div>
-        <button onclick="window.print()" class="btn btn-primary d-none d-md-block animate__animated animate__fadeInRight">
-            <i class="bi bi-download me-2"></i> Save as PDF
+        <button onclick="window.print()" class="btn btn-primary d-none d-md-block shadow">
+            <i class="bi bi-download me-2"></i> PDF VERSION
         </button>
     </div>
 </section>
@@ -21,99 +23,52 @@
         <div class="col-lg-8">
             <!-- Experience -->
             <div class="mb-5">
-                <h3 class="fw-bold mb-4 d-flex align-items-center">
-                    <span class="bg-primary text-white rounded-circle p-2 me-3 d-flex" style="width: 40px; height: 40px; justify-content: center; align-items: center;">
-                        <i class="bi bi-briefcase fs-6"></i>
-                    </span>
-                    Professional Experience
-                </h3>
+                <h2 class="section-title">Experience</h2>
                 
                 {% for exp in experiences %}
-                <div class="card p-4 border-0 mb-4 bg-white">
+                <div class="card p-4 mb-5">
                     <div class="d-flex justify-content-between align-items-start mb-3">
                         <div>
-                            <h5 class="fw-bold text-primary mb-1">{{ exp.job_title }}</h5>
-                            <h6 class="fw-bold text-dark">{{ exp.company }}</h6>
+                            <h4 class="mb-1 text-primary">{{ exp.job_title|upper }}</h4>
+                            <h5 class="fw-bold">{{ exp.company }}</h5>
                         </div>
-                        <span class="badge bg-light text-dark p-2 px-3 border">{{ exp.start_date }} – {{ exp.end_date }}</span>
+                        <span class="badge bg-dark p-2 px-3">{{ exp.start_date }} – {{ exp.end_date }}</span>
                     </div>
-                    <p class="text-muted small mb-0">{{ exp.description|linebreaks }}</p>
+                    <div class="fw-bold text-dark">
+                        {{ exp.description|linebreaks }}
+                    </div>
                 </div>
                 {% endfor %}
             </div>
 
             <!-- Education -->
             <div class="mb-5">
-                <h3 class="fw-bold mb-4 d-flex align-items-center">
-                    <span class="bg-warning text-dark rounded-circle p-2 me-3 d-flex" style="width: 40px; height: 40px; justify-content: center; align-items: center;">
-                        <i class="bi bi-mortarboard fs-6"></i>
-                    </span>
-                    Education
-                </h3>
+                <h2 class="section-title">Education</h2>
                 
                 {% for edu in education %}
-                <div class="card p-4 border-0 mb-4 bg-white">
+                <div class="card p-4 mb-5">
                     <div class="d-flex justify-content-between align-items-start mb-3">
                         <div>
-                            <h5 class="fw-bold text-dark mb-1">{{ edu.institution }}</h5>
-                            <h6 class="text-primary fw-bold">{{ edu.degree }}</h6>
+                            <h4 class="mb-1">{{ edu.institution|upper }}</h4>
+                            <h5 class="text-primary fw-bold">{{ edu.degree }}</h5>
                         </div>
-                        <span class="badge bg-light text-dark p-2 px-3 border">{{ edu.graduation_date }}</span>
+                        <span class="badge bg-dark p-2 px-3">{{ edu.graduation_date }}</span>
                     </div>
-                    {% if edu.gpa %}<p class="fw-bold small mb-1">GPA: <span class="text-success">{{ edu.gpa }}</span></p>{% endif %}
-                    <p class="text-muted small mb-0">{{ edu.details }}</p>
+                    {% if edu.gpa %}<p class="fw-bold mb-1">GPA: <span class="text-primary">{{ edu.gpa }}</span></p>{% endif %}
+                    <p class="fw-bold text-dark mb-0">{{ edu.details }}</p>
                 </div>
                 {% endfor %}
             </div>
         </div>
 
-            <!-- Certifications Section -->
-            <div class="mb-5">
-                <h3 class="fw-bold mb-4 d-flex align-items-center">
-                    <span class="bg-info text-white rounded-circle p-2 me-3 d-flex" style="width: 40px; height: 40px; justify-content: center; align-items: center;">
-                        <i class="bi bi-patch-check fs-6"></i>
-                    </span>
-                    Professional Certifications
-                </h3>
-                
-                <div class="row g-4">
-                    {% for cert in certifications %}
-                    <div class="col-12">
-                        <div class="card p-0 border-0 shadow-sm overflow-hidden bg-white">
-                            <div class="row g-0">
-                                <div class="col-md-5">
-                                    {% if cert.static_image_path %}
-                                        <div class="bg-light h-100 d-flex align-items-center justify-content-center p-3 border-end">
-                                            <img src="{% static cert.static_image_path %}" alt="{{ cert.name }}" class="img-fluid rounded shadow-sm" style="max-height: 250px;">
-                                        </div>
-                                    {% else %}
-                                        <div class="bg-light h-100 d-flex align-items-center justify-content-center p-5 border-end">
-                                            <i class="bi bi-file-earmark-check display-3 text-secondary opacity-25"></i>
-                                        </div>
-                                    {% endif %}
-                                </div>
-                                <div class="col-md-7">
-                                    <div class="card-body p-4">
-                                        <h5 class="fw-bold text-dark mb-3">{{ cert.name }}</h5>
-                                        <p class="text-muted small mb-0" style="line-height: 1.7;">
-                                            {{ cert.description }}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-
         <div class="col-lg-4">
-            <!-- Contact Card -->
-            <div class="card p-4 border-0 bg-primary text-white">
-                <h4 class="fw-bold mb-3">Ready to talk?</h4>
-                <p class="small opacity-75 mb-4">I'm always looking for interesting projects and business analysis opportunities.</p>
-                <a href="{% url 'contact' %}" class="btn btn-light fw-bold w-100">Contact Me</a>
+            <div class="sticky-top" style="top: 100px;">
+                <!-- Contact Card -->
+                <div class="card p-4 bg-primary text-white" style="box-shadow: 10px 10px 0px var(--secondary);">
+                    <h3 class="text-white mb-3">READY TO TALK?</h3>
+                    <p class="fw-bold mb-4 opacity-75">I'm always looking for interesting projects and business analysis opportunities.</p>
+                    <a href="{% url 'contact' %}" class="btn btn-outline-primary bg-white text-dark w-100 fw-bold">CONTACT ME</a>
+                </div>
             </div>
         </div>
     </div>
