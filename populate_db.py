@@ -175,24 +175,34 @@ Outside of work, I enjoy painting, traveling, and music — creative outlets tha
             "video_static_path": "portfolio/video/joker.mp4"
         },
         {
-            "title": "Machine Learning Projects",
+            "title": "Machine Learning Project (LearningLog)",
             "summary": "A collection of predictive modeling scripts focused on California housing prices and vehicle fuel efficiency.",
             "business_problem": "Predicting complex outcomes like housing market trends and fuel consumption requires clean data and robust regression models. These projects demonstrate the practical application of Linear Regression to real-world datasets.",
             "tools_used": "Python, Scikit-learn, Pandas, Matplotlib, Hugging Face Datasets",
             "key_features": """ml2.py: California Housing Prediction
-This script performs a multiple linear regression to predict median house values in California.
-* Data Exploration: Used pandas to analyze the California Housing dataset, printing shapes, feature names, and descriptive statistics.
-* Modeling: Split the data into training (75%) and testing (25%) sets, then trained a LinearRegression model.
-* Insights: Calculated the coefficients for each feature (e.g., MedInc, HouseAge), showing how much each factor impacts the price.
-* Visualization: Created a scatter plot comparing Expected vs. Predicted prices with a diagonal line to visualize model accuracy.
+  This script performs a multiple linear regression to predict median house values in    
+  California.
+   * Data Exploration: Used pandas to analyze the California Housing dataset, printing   
+     shapes, feature names, and descriptive statistics.
+   * Modeling: Split the data into training (75%) and testing (25%) sets, then trained a 
+     LinearRegression model.
+   * Insights: Calculated the coefficients for each feature (e.g., MedInc, HouseAge),    
+     showing how much each factor impacts the price.
+   * Visualization: Created a scatter plot comparing Expected vs. Predicted prices with a
+     diagonal line to visualize model accuracy.
 
-ml3.py: Auto MPG Prediction
-This script applies linear regression to the "Auto MPG" dataset to predict vehicle fuel efficiency.
-* Data Loading: Utilized the datasets library to fetch the Auto MPG dataset from Hugging Face.
-* Modeling: Trained a LinearRegression model on vehicle characteristics to predict miles per gallon (MPG).
-* Validation: Compared actual MPG values against predicted ones and printed a sample of the results (e.g., Actual: 28.00 Predicted: 29.15).
-* Visualization: Generated a plot of Actual vs. Predicted MPG to assess how closely the model's predictions align with reality.""",
-            "role": "Lead Data Analyst - developed the full pipeline from data fetching to visualization for both projects.",
+  ml3.py: Auto MPG Prediction
+  This script applies linear regression to the \"Auto MPG\" dataset to predict vehicle fuel  
+  efficiency.
+   * Data Loading: Utilized the datasets library to fetch the Auto MPG dataset from Hugging
+     Face.
+   * Modeling: Trained a LinearRegression model on vehicle characteristics to predict miles
+     per gallon (MPG).
+   * Validation: Compared actual MPG values against predicted ones and printed a sample of 
+     the results (e.g., Actual: 28.00 Predicted: 29.15).
+   * Visualization: Generated a plot of Actual vs. Predicted MPG to assess how closely the 
+     model's predictions align with reality.""",
+            "role": "Lead Data Scientist - developed the full pipeline from data fetching to visualization for both projects.",
             "biggest_challenge": "Managing data from different sources (local CSV vs. Hugging Face API) and ensuring consistent feature scaling for regression accuracy.",
             "what_you_learned": "Strengthened my understanding of linear regression coefficients and learned how to leverage multimodal datasets for predictive analytics.",
             "github_link": "https://github.com/lenatao15/LearningLogProject",
