@@ -11,11 +11,13 @@ def populate():
     Profile.objects.all().delete()
     profile = Profile.objects.create(
         name="Olena Makarova",
-        about_me="""I’m a Master of Science in Information Systems student at Baylor University with a concentration in Business Analysis. 
+        about_me="""I’m originally from Ukraine and currently pursuing my degree in Information Systems in the U.S. Moving to a new country challenged me to adapt quickly to a new language, culture, and academic system. 
+
+Along the way, I’ve developed not only technical skills in data and systems, but also resilience, independence, and the ability to learn fast in unfamiliar environments. 
 
 My background is a mix of sociology and technology, which means I don’t just look at data — I try to understand the human story behind it. I enjoy organizing messy information, finding patterns, and turning chaos into something structured and useful.
 
-I’ve worked in both administrative and data-focused roles, where I developed strong attention to detail, problem-solving skills, and the ability to work across teams. I’m especially interested in roles where I can combine analytical thinking with real-world impact.""",
+Outside of work, I enjoy painting, traveling, and music — creative outlets that help me stay balanced and curious.""",
         email="Olena_makarova1@baylor.edu",
         phone="(707) 413-5847",
         linkedin="https://www.linkedin.com/in/olena-makarova-a10687198/",
