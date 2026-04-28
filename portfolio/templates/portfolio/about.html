@@ -10,12 +10,35 @@
                 <div class="card p-5">
                     <div class="section-title">MY STORY</div>
                     <h1 class="display-3 mb-4">About Me</h1>
-                    <div class="lead text-muted mb-5 fs-5">
+                    <div class="lead text-muted mb-5 fs-5" style="line-height: 1.8;">
                         {{ profile.about_me|linebreaks }}
                     </div>
-                    <hr class="mb-5 opacity-10">
-                    <h3 class="h4 mb-4 fw-bold">Personal Philosophy</h3>
-                    <p class="text-muted">I enjoy working independently and value deep focus. I’m naturally detail-oriented and tend to notice things others might overlook — especially in data. I’m currently exploring career paths in business analysis and systems analysis, where I can combine structured thinking with meaningful problem-solving.</p>
+
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-4">
+                            <div class="card p-4 border-0 shadow-sm text-center" style="background: rgba(139, 92, 246, 0.03);">
+                                <i class="bi bi-palette fs-2 text-primary mb-2"></i>
+                                <h5 class="fw-bold">Painting</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card p-4 border-0 shadow-sm text-center" style="background: rgba(139, 92, 246, 0.03);">
+                                <i class="bi bi-airplane fs-2 text-primary mb-2"></i>
+                                <h5 class="fw-bold">Traveling</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card p-4 border-0 shadow-sm text-center" style="background: rgba(139, 92, 246, 0.03);">
+                                <i class="bi bi-music-note-beamed fs-2 text-primary mb-2"></i>
+                                <h5 class="fw-bold">Music</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-5 opacity-10">
+                    
+                    <h3 class="h4 mb-4 fw-bold">Professional Focus</h3>
+                    <p class="text-muted">I’m currently exploring career paths in business analysis and systems analysis, where I can combine structured thinking with meaningful problem-solving. My background in sociology helps me bring a human-centric perspective to technical data, ensuring that the systems I build or analyze actually serve the people using them.</p>
                 </div>
             </div>
         </div>
