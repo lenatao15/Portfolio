@@ -1,10 +1,10 @@
 [
 {
   "model": "portfolio.profile",
-  "pk": 14,
+  "pk": 21,
   "fields": {
     "name": "Olena Makarova",
-    "about_me": "I’m a Master of Science in Information Systems student at Baylor University with a concentration in Business Analysis. \n\nMy background is a mix of sociology and technology, which means I don’t just look at data — I try to understand the human story behind it. I enjoy organizing messy information, finding patterns, and turning chaos into something structured and useful.\n\nI’ve worked in both administrative and data-focused roles, where I developed strong attention to detail, problem-solving skills, and the ability to work across teams. I’m especially interested in roles where I can combine analytical thinking with real-world impact.",
+    "about_me": "I’m originally from Ukraine and currently pursuing my degree in Information Systems in the U.S. Moving to a new country challenged me to adapt quickly to a new language, culture, and academic system. \n\nAlong the way, I’ve developed not only technical skills in data and systems, but also resilience, independence, and the ability to learn fast in unfamiliar environments. \n\nMy background is a mix of sociology and technology, which means I don’t just look at data — I try to understand the human story behind it. I enjoy organizing messy information, finding patterns, and turning chaos into something structured and useful.\n\nOutside of work, I enjoy painting, traveling, and music — creative outlets that help me stay balanced and curious.",
     "email": "Olena_makarova1@baylor.edu",
     "phone": "(707) 413-5847",
     "linkedin": "https://www.linkedin.com/in/olena-makarova-a10687198/",
@@ -13,7 +13,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 300,
+  "pk": 461,
   "fields": {
     "name": "Data Analysis & Data Cleaning",
     "category": "technical",
@@ -22,7 +22,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 301,
+  "pk": 462,
   "fields": {
     "name": "SQL",
     "category": "technical",
@@ -31,7 +31,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 302,
+  "pk": 463,
   "fields": {
     "name": "Python",
     "category": "technical",
@@ -40,7 +40,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 303,
+  "pk": 464,
   "fields": {
     "name": "Tableau",
     "category": "technical",
@@ -49,7 +49,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 304,
+  "pk": 465,
   "fields": {
     "name": "Microsoft Excel",
     "category": "technical",
@@ -58,7 +58,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 305,
+  "pk": 466,
   "fields": {
     "name": "Lucidchart",
     "category": "technical",
@@ -67,7 +67,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 306,
+  "pk": 467,
   "fields": {
     "name": "Visio",
     "category": "technical",
@@ -76,7 +76,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 307,
+  "pk": 468,
   "fields": {
     "name": "Data Modeling",
     "category": "technical",
@@ -85,7 +85,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 308,
+  "pk": 469,
   "fields": {
     "name": "Basic Video Editing",
     "category": "technical",
@@ -94,7 +94,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 309,
+  "pk": 470,
   "fields": {
     "name": "Trend Analysis",
     "category": "analytical",
@@ -103,7 +103,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 310,
+  "pk": 471,
   "fields": {
     "name": "Data Interpretation",
     "category": "analytical",
@@ -112,7 +112,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 311,
+  "pk": 472,
   "fields": {
     "name": "Problem Solving",
     "category": "analytical",
@@ -121,7 +121,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 312,
+  "pk": 473,
   "fields": {
     "name": "Workflow Optimization",
     "category": "analytical",
@@ -130,7 +130,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 313,
+  "pk": 474,
   "fields": {
     "name": "Communication",
     "category": "soft",
@@ -139,7 +139,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 314,
+  "pk": 475,
   "fields": {
     "name": "Cross-functional Collaboration",
     "category": "soft",
@@ -148,7 +148,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 315,
+  "pk": 476,
   "fields": {
     "name": "Attention to Detail",
     "category": "soft",
@@ -157,7 +157,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 316,
+  "pk": 477,
   "fields": {
     "name": "Organization",
     "category": "soft",
@@ -166,7 +166,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 317,
+  "pk": 478,
   "fields": {
     "name": "Adaptability",
     "category": "soft",
@@ -175,7 +175,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 318,
+  "pk": 479,
   "fields": {
     "name": "Ukrainian",
     "category": "language",
@@ -184,7 +184,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 319,
+  "pk": 480,
   "fields": {
     "name": "Russian",
     "category": "language",
@@ -193,7 +193,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 320,
+  "pk": 481,
   "fields": {
     "name": "English",
     "category": "language",
@@ -202,7 +202,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 321,
+  "pk": 482,
   "fields": {
     "name": "Chinese",
     "category": "language",
@@ -211,7 +211,7 @@
 },
 {
   "model": "portfolio.skill",
-  "pk": 322,
+  "pk": 483,
   "fields": {
     "name": "Japanese",
     "category": "language",
@@ -220,7 +220,7 @@
 },
 {
   "model": "portfolio.experience",
-  "pk": 27,
+  "pk": 41,
   "fields": {
     "job_title": "Property Records Analyst",
     "company": "Total Tax Certificate",
@@ -232,7 +232,7 @@
 },
 {
   "model": "portfolio.experience",
-  "pk": 28,
+  "pk": 42,
   "fields": {
     "job_title": "Project Administrator",
     "company": "Stantec",
@@ -244,7 +244,7 @@
 },
 {
   "model": "portfolio.education",
-  "pk": 25,
+  "pk": 39,
   "fields": {
     "institution": "Baylor University",
     "location": "Waco, TX",
@@ -256,7 +256,7 @@
 },
 {
   "model": "portfolio.education",
-  "pk": 26,
+  "pk": 40,
   "fields": {
     "institution": "Kyiv National University of Culture and Arts",
     "location": "Kyiv, Ukraine",
@@ -268,7 +268,7 @@
 },
 {
   "model": "portfolio.certification",
-  "pk": 25,
+  "pk": 53,
   "fields": {
     "name": "IBM Build an AI Agent Certificate",
     "description": "Mastered the architecture and deployment of intelligent AI agents. This certification from IBM focuses on designing multi-step agentic workflows, prompt engineering, and integrating AI models into practical business applications to enhance decision-making and productivity.",
@@ -277,7 +277,7 @@
 },
 {
   "model": "portfolio.certification",
-  "pk": 26,
+  "pk": 54,
   "fields": {
     "name": "IBM Enterprise Design Thinking Certificate",
     "description": "Developed a deep understanding of human-centered design principles within a large-scale corporate environment. Learned how to facilitate collaborative problem-solving, identify user needs through empathy mapping, and iterate on solutions that align business goals with user experience.",
@@ -286,7 +286,7 @@
 },
 {
   "model": "portfolio.certification",
-  "pk": 27,
+  "pk": 55,
   "fields": {
     "name": "IBM Risk Management Certificate",
     "description": "Explored the methodologies and frameworks used to identify, assess, and mitigate risks in a business context. The course covered quantitative and qualitative risk analysis, strategy formulation, and the implementation of controls to protect organizational assets and ensure business continuity.",
@@ -295,7 +295,7 @@
 },
 {
   "model": "portfolio.certification",
-  "pk": 28,
+  "pk": 56,
   "fields": {
     "name": "HRCI Human Resource Associate Specialization Certificate",
     "description": "Gained foundational knowledge in human resource management, including recruitment, employee relations, and compliance. This specialized certificate from HRCI validates expertise in the core functions of HR and the legal frameworks governing the workplace.",
@@ -304,7 +304,7 @@
 },
 {
   "model": "portfolio.project",
-  "pk": 81,
+  "pk": 125,
   "fields": {
     "title": "Chatbot Project",
     "summary": "An intelligent conversational agent created using Chatbase to improve customer support responsiveness.",
@@ -328,7 +328,7 @@
 },
 {
   "model": "portfolio.project",
-  "pk": 82,
+  "pk": 126,
   "fields": {
     "title": "n8n Agent Workflow Project",
     "summary": "Automated business processes using low-code workflow automation.",
@@ -352,7 +352,7 @@
 },
 {
   "model": "portfolio.project",
-  "pk": 83,
+  "pk": 127,
   "fields": {
     "title": "LangChain (HandyMan) Project",
     "summary": "A sophisticated AI agent capable of multi-step reasoning and tool usage for service automation.",
@@ -376,7 +376,7 @@
 },
 {
   "model": "portfolio.project",
-  "pk": 84,
+  "pk": 128,
   "fields": {
     "title": "Google AI Studio Media Project",
     "summary": "Leveraging Gemini models for automated media analysis and content generation.",
@@ -400,23 +400,23 @@
 },
 {
   "model": "portfolio.project",
-  "pk": 85,
+  "pk": 129,
   "fields": {
     "title": "Machine Learning Project (LearningLog)",
-    "summary": "Predictive model for identifying patterns in sociology-tech data.",
-    "business_problem": "Identifying key factors that influence technology adoption in diverse social groups.",
-    "tools_used": "Python, Scikit-learn, Pandas, Matplotlib",
-    "key_features": "Data preprocessing, feature engineering, Random Forest classification.",
-    "role": "Data Scientist - performed data cleaning and model training.",
-    "biggest_challenge": "Dealing with highly imbalanced classes in the social dataset.",
-    "what_you_learned": "Learned advanced data imputation and cross-validation techniques.",
+    "summary": "A collection of predictive modeling scripts focused on California housing prices and vehicle fuel efficiency.",
+    "business_problem": "Predicting complex outcomes like housing market trends and fuel consumption requires clean data and robust regression models. These projects demonstrate the practical application of Linear Regression to real-world datasets.",
+    "tools_used": "Python, Scikit-learn, Pandas, Matplotlib, Hugging Face Datasets",
+    "key_features": "ml2.py: California Housing Prediction\n  This script performs a multiple linear regression to predict median house values in    \n  California.\n   * Data Exploration: Used pandas to analyze the California Housing dataset, printing   \n     shapes, feature names, and descriptive statistics.\n   * Modeling: Split the data into training (75%) and testing (25%) sets, then trained a \n     LinearRegression model.\n   * Insights: Calculated the coefficients for each feature (e.g., MedInc, HouseAge),    \n     showing how much each factor impacts the price.\n   * Visualization: Created a scatter plot comparing Expected vs. Predicted prices with a\n     diagonal line to visualize model accuracy.\n\n  ml3.py: Auto MPG Prediction\n  This script applies linear regression to the \"Auto MPG\" dataset to predict vehicle fuel  \n  efficiency.\n   * Data Loading: Utilized the datasets library to fetch the Auto MPG dataset from Hugging\n     Face.\n   * Modeling: Trained a LinearRegression model on vehicle characteristics to predict miles\n     per gallon (MPG).\n   * Validation: Compared actual MPG values against predicted ones and printed a sample of \n     the results (e.g., Actual: 28.00 Predicted: 29.15).\n   * Visualization: Generated a plot of Actual vs. Predicted MPG to assess how closely the \n     model's predictions align with reality.",
+    "role": "Lead Data Scientist - developed the full pipeline from data fetching to visualization for both projects.",
+    "biggest_challenge": "Managing data from different sources (local CSV vs. Hugging Face API) and ensuring consistent feature scaling for regression accuracy.",
+    "what_you_learned": "Strengthened my understanding of linear regression coefficients and learned how to leverage multimodal datasets for predictive analytics.",
     "image": "",
-    "icon_class": "bi-graph-up-arrow",
+    "icon_class": "bi-cpu-fill",
     "video_static_path": null,
-    "static_image_1": null,
-    "static_image_2": null,
-    "static_image_3": null,
-    "static_image_4": null,
+    "static_image_1": "portfolio/images/projects/Figure_3_ml2.png",
+    "static_image_2": "portfolio/images/projects/Figure_4_ml2.png",
+    "static_image_3": "portfolio/images/projects/Figure_1_ml3.png",
+    "static_image_4": "portfolio/images/projects/Figure_2_ml3.png",
     "github_link": "https://github.com/lenatao15/LearningLogProject",
     "demo_link": "",
     "slug": "machine-learning-project-learninglog"
@@ -424,7 +424,7 @@
 },
 {
   "model": "portfolio.project",
-  "pk": 86,
+  "pk": 130,
   "fields": {
     "title": "SkillSwamp",
     "summary": "Where students trade talents and grow together! 🐸✨",
