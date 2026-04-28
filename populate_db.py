@@ -11,11 +11,9 @@ def populate():
     Profile.objects.all().delete()
     profile = Profile.objects.create(
         name="Olena Makarova",
-        about_me="""I’m originally from Ukraine and currently pursuing my degree in Information Systems in the U.S. Moving to a new country challenged me to adapt quickly to a new language, culture, and academic system. 
+        about_me="""I’m originally from Ukraine and currently pursuing my degree in Information Systems in the U.S. Moving to a new country challenged me to adapt quickly to a new language, culture, and academic system.
 
-Along the way, I’ve developed not only technical skills in data and systems, but also resilience, independence, and the ability to learn fast in unfamiliar environments. 
-
-My background is a mix of sociology and technology, which means I don’t just look at data — I try to understand the human story behind it. I enjoy organizing messy information, finding patterns, and turning chaos into something structured and useful.
+Along the way, I’ve developed not only technical skills in data and systems, but also resilience, independence, and the ability to learn fast in unfamiliar environments.
 
 Outside of work, I enjoy painting, traveling, and music — creative outlets that help me stay balanced and curious.""",
         email="Olena_makarova1@baylor.edu",
